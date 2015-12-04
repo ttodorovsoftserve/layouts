@@ -33,7 +33,6 @@ body.not-logged-in {
         }
 
         .custom-width {
-
             .info {
                 padding-left: 0;
                 color: #ffffff;
@@ -120,8 +119,29 @@ body.not-logged-in {
                         background-size: 25px;
                         text-indent: 0.01px;
                         cursor: pointer;
-
                     }
+
+                    
+                    ::-webkit-input-placeholder {
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    :-moz-placeholder { /* Firefox 18- */
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    ::-moz-placeholder {  /* Firefox 19+ */
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    :-ms-input-placeholder {
+                        color: #fff;
+                        font-style: italic;
+                    }
+
 
                     select::-ms-expand {
                         display: none;
@@ -155,24 +175,4 @@ body.not-logged-in {
             }
         }
     }
-}
-
-::-webkit-input-placeholder {
-    color: #fff;
-    font-style: italic;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-    color: #fff;
-    font-style: italic;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-    color: #fff;
-    font-style: italic;
-}
-
-:-ms-input-placeholder {
-    color: #fff;
-    font-style: italic;
 }
