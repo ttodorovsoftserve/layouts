@@ -33,14 +33,16 @@ body.not-logged-in {
         }
 
         .custom-width {
-            //margin-left: 360px;
-            //width: 460px;
+            width: 460px;
 
             .info {
                 padding-left: 0;
                 color: #ffffff;
                 font-style: italic;
                 font-size: 120%;
+            }
+            p {
+                margin-bottom: 0;
             }
 
             h1 {
@@ -80,33 +82,33 @@ body.not-logged-in {
                         outline: none;
                     }
 
-                    input[type="password"]::-webkit-input-placeholder {
-                    height: 28px;
-                        font-size: 140%;
-                        font-weight: bold;
-                        letter-spacing: 6px;
-                        padding-bottom: 12px;
-                        outline: none;
-                    }
-                    input[type="password"]:-moz-placeholder {
-                    height: 28px;
-                        font-size: 140%;
-                        font-weight: bold;
-                        letter-spacing: 6px;
-                        padding-bottom: 12px;
-                        outline: none;
-                    }
-                    input[type="password"]::-moz-placeholder {
-                    height: 28px;
-                        font-size: 140%;
-                        font-weight: bold;
-                        letter-spacing: 6px;
-                        padding-bottom: 12px;
-                        outline: none;
-                    }
+                    //input[type="password"]::-webkit-input-placeholder {
+                    //height: 28px;
+                    //    font-size: 140%;
+                    //    font-weight: bold;
+                    //    letter-spacing: 6px;
+                    //    padding-bottom: 12px;
+                    //    outline: none;
+                    //}
+                    //input[type="password"]:-moz-placeholder {
+                    //height: 28px;
+                    //    font-size: 140%;
+                    //    font-weight: bold;
+                    //    letter-spacing: 6px;
+                    //    padding-bottom: 12px;
+                    //    outline: none;
+                    //}
+                    //input[type="password"]::-moz-placeholder {
+                    //height: 28px;
+                    //    font-size: 140%;
+                    //    font-weight: bold;
+                    //    letter-spacing: 6px;
+                    //    padding-bottom: 12px;
+                    //    outline: none;
+                    //}
                     input[type="password"]:-ms-input-placeholder {
                     height: 28px;
-                        font-size: 140%;
+                        font-size: 120%;
                         font-weight: bold;
                         letter-spacing: 6px;
                         padding-bottom: 12px;
