@@ -116,10 +116,9 @@ body.not-logged-in {
                     select {
                         -webkit-appearance: none;
                         -moz-appearance: none;
-                        background: url("../images/drop-down-arrow.png") calc(100% - 10px) 10px no-repeat; /*Adds background-image*/
-                        background-size: 10px;
+                        background: url("../images/drop-down-arrow.png") calc(100% - 5px) 4px no-repeat; /*Adds background-image*/
+                        background-size: 25px;
                         text-indent: 0.01px;
-                        text-overflow: "";
                         cursor: pointer;
 
                     }
@@ -129,6 +128,7 @@ body.not-logged-in {
                     }
 
                     option {
+                        background-color: #fff;
                         color: #000;
                     }
 
