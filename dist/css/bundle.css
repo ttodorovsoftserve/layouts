@@ -1,39 +1,82 @@
 body.not-logged-in {
   background-color: #0099E0;
   font-family: verdana, sans-serif; }
-
-body.not-logged-in main {
-  margin-top: 190px;
-  margin-bottom: 160px; }
-
-body.not-logged-in .custom-width {
-  width: 460px; }
-
-body.not-logged-in h1 {
-  text-align: center;
-  color: #ffffff; }
-
-body.not-logged-in .info {
-  padding-left: 0;
-  color: #ffffff;
-  font-style: italic;
-  font-size: 120%; }
-
-body.not-logged-in label {
-  font-size: 120%;
-  font-weight: 100;
-  color: #B1DFF5;
-  margin-top: 32px;
-  padding-left: 0; }
-
-body.not-logged-in input, body.not-logged-in select {
-  width: 250px;
-  background: transparent;
-  color: #ffffff;
-  border-bottom: 2px solid #fff !important;
-  font-size: 120%;
-  margin-top: 32px;
-  border: 0px none; }
+  body.not-logged-in main {
+    margin-top: 19.58vh;
+    margin-bottom: 16.6vh; }
+    body.not-logged-in main .custom-width .info {
+      padding-left: 0;
+      color: #ffffff;
+      font-style: italic;
+      font-size: 120%; }
+    body.not-logged-in main .custom-width h1 {
+      text-align: center;
+      color: #ffffff; }
+    body.not-logged-in main .custom-width .form-wrapper form label {
+      font-size: 120%;
+      font-weight: 100;
+      color: #B1DFF5;
+      margin-top: 30px;
+      padding-left: 0; }
+    body.not-logged-in main .custom-width .form-wrapper form input, body.not-logged-in main .custom-width .form-wrapper form select {
+      background: transparent;
+      color: #ffffff;
+      border-bottom: 2px solid #fff !important;
+      font-size: 120%;
+      margin-top: 30px;
+      border: 0px none;
+      padding-left: 9px;
+      padding-right: 9px; }
+    body.not-logged-in main .custom-width .form-wrapper form input[type="password"] {
+      height: 28px;
+      font-size: 140%;
+      font-weight: bold;
+      letter-spacing: 6px;
+      padding-bottom: 12px;
+      outline: none; }
+    body.not-logged-in main .custom-width .form-wrapper form input[type="password"]::-webkit-input-placeholder {
+      height: 28px;
+      font-size: 140%;
+      font-weight: bold;
+      letter-spacing: 6px;
+      padding-bottom: 12px;
+      outline: none; }
+    body.not-logged-in main .custom-width .form-wrapper form input[type="password"]:-moz-placeholder {
+      height: 28px;
+      font-size: 140%;
+      font-weight: bold;
+      letter-spacing: 6px;
+      padding-bottom: 12px;
+      outline: none; }
+    body.not-logged-in main .custom-width .form-wrapper form input[type="password"]::-moz-placeholder {
+      height: 28px;
+      font-size: 140%;
+      font-weight: bold;
+      letter-spacing: 6px;
+      padding-bottom: 12px;
+      outline: none; }
+    body.not-logged-in main .custom-width .form-wrapper form input[type="password"]:-ms-input-placeholder {
+      height: 28px;
+      font-size: 140%;
+      font-weight: bold;
+      letter-spacing: 6px;
+      padding-bottom: 12px;
+      outline: none; }
+    body.not-logged-in main .custom-width .form-wrapper form option {
+      color: #000; }
+    body.not-logged-in main .custom-width .form-wrapper form .add-info {
+      padding-left: 0;
+      margin-top: 52px;
+      color: #ffffff;
+      font-style: italic;
+      font-size: 120%; }
+    body.not-logged-in main .custom-width .form-wrapper form button {
+      margin-top: 45px;
+      color: #2AACE4;
+      height: 65px;
+      font-size: 130%; }
+    body.not-logged-in main .custom-width .form-wrapper form button:hover {
+      color: #2AACE4; }
 
 ::-webkit-input-placeholder {
   color: #fff;
@@ -52,25 +95,6 @@ body.not-logged-in input, body.not-logged-in select {
 :-ms-input-placeholder {
   color: #fff;
   font-style: italic; }
-
-body.not-logged-in .add-info {
-  padding-left: 0;
-  margin-top: 50px;
-  color: #ffffff;
-  font-style: italic;
-  font-size: 120%; }
-
-body.not-logged-in option {
-  color: #000; }
-
-body.not-logged-in button {
-  margin-top: 45px;
-  color: #2AACE4;
-  height: 65px;
-  font-size: 130%; }
-
-body.not-logged-in button:hover {
-  color: #2AACE4; }
 
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
