@@ -3,4 +3,4 @@ node_modules
 src/vendor
 src/styles/*.css
 .idea
-dist
+dist/*

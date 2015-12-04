@@ -33,11 +33,6 @@ body.not-logged-in {
         }
 
         .custom-width {
-<<<<<<< HEAD
-=======
-            width: 460px;
-
->>>>>>> ad45316effbb9b69f82c9734ca6eb0c029d43245
             .info {
                 padding-left: 0;
                 color: #ffffff;
@@ -125,8 +120,29 @@ body.not-logged-in {
                         text-indent: 0.01px;
                         text-overflow: "";
                         cursor: pointer;
-
                     }
+
+                    
+                    ::-webkit-input-placeholder {
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    :-moz-placeholder { /* Firefox 18- */
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    ::-moz-placeholder {  /* Firefox 19+ */
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    :-ms-input-placeholder {
+                        color: #fff;
+                        font-style: italic;
+                    }
+
 
                     select::-ms-expand {
                         display: none;
@@ -160,27 +176,3 @@ body.not-logged-in {
         }
     }
 }
-
-::-webkit-input-placeholder {
-    color: #fff;
-    font-style: italic;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-    color: #fff;
-    font-style: italic;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-    color: #fff;
-    font-style: italic;
-}
-
-:-ms-input-placeholder {
-    color: #fff;
-    font-style: italic;
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 3b35556599ee6249d16425aa4a6a653466e0f4b5
