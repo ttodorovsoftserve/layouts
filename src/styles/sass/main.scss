@@ -1,85 +1,143 @@
 body.not-logged-in {
-    background-color: #0099E0;
-    font-family: verdana, sans-serif;
+  background-color: #0099E0;
+  font-family: verdana, sans-serif;
 }
 
 body.not-logged-in main {
-    margin-top: 190px;
-    margin-bottom: 160px
+  margin-top: 190px;
+  margin-bottom: 160px
 }
 
 body.not-logged-in h1 {
-    text-align: center;
-    color: #ffffff;
+  text-align: center;
+  color: #ffffff;
 }
 
 body.not-logged-in .info {
-    padding-left: 0;
-    color: #ffffff;
-    font-style: italic;
-    font-size: 120%;
+  padding-left: 0;
+  color: #ffffff;
+  font-style: italic;
+  font-size: 120%;
 }
 
 /*body.not-logged-in .form-wrapper {*/
-    /*margin-top: 35px;*/
+/*margin-top: 35px;*/
 /*}*/
 
 body.not-logged-in label {
-    font-weight: 100;
-    color: #B1DFF5;
-    margin-top: 40px;
-    padding-left: 0;
+  font-weight: 100;
+  color: #B1DFF5;
+  margin-top: 40px;
+  padding-left: 0;
 }
 
 body.not-logged-in input, body.not-logged-in select {
-    background: transparent;
-    color: #ffffff;
-    border-bottom: 2px solid #fff !important;
-    font-size: 140%;
-    margin-top: 40px;
-    border: 0px none;
+  background: transparent;
+  color: #ffffff;
+  border-bottom: 2px solid #fff !important;
+  font-size: 140%;
+  margin-top: 40px;
+  border: 0px none;
 }
 
 ::-webkit-input-placeholder {
-    color: #fff;
-    font-style: italic;
+  color: #fff;
+  font-style: italic;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-    color: #fff;
-    font-style: italic;
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+  font-style: italic;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-    color: #fff;
-    font-style: italic;
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+  font-style: italic;
 }
 
 :-ms-input-placeholder {
-    color: #fff;
-    font-style: italic;
+  color: #fff;
+  font-style: italic;
 }
 
 body.not-logged-in .add-info {
-    padding-left: 0;
-    margin-top: 50px;
-    color: #ffffff;
-    font-style: italic;
-    font-size: 120%;
+  padding-left: 0;
+  margin-top: 50px;
+  color: #ffffff;
+  font-style: italic;
+  font-size: 120%;
 }
 
 body.not-logged-in option {
-   color: #000;
+  color: #000;
 }
 
 body.not-logged-in button {
-    margin-top: 45px;
-    color: #2AACE4;
-    height: 65px;
-    font-size: 130%;
+  margin-top: 45px;
+  color: #2AACE4;
+  height: 65px;
+  font-size: 130%;
 }
 
 body.not-logged-in button:hover {
-    color: #2AACE4;
+  color: #2AACE4;
 }
 
+.sign-in{
+  font-size: 1.6rem;
+  font-style: normal;
+
+  h1{
+    margin-top: 12px;
+    margin-left: 5px;
+  }
+
+  label{
+    display: block;
+    margin-left: 30px;
+    font-size: 1.6rem;
+    margin-bottom: 7px;
+
+    &.username{
+      margin-top: 60px;
+    }
+  }
+
+  input[type='text'], input[type='password']{
+    margin-left: 14px;
+    margin-top: 16px;
+    width: 320px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 0 22px 15px;
+  }
+
+  input[type='text']{
+    margin-top: 17px;
+    margin-bottom: 10px;
+  }
+
+  input[type='submit']{
+    font-size: 1.5rem;
+    margin-left: 14px;
+    margin-top: 46px;
+    margin-bottom: 32px;
+    width: 320px;
+    height: 68px;
+    border: none!important;
+    background-color: #fff;
+    color: #0099E0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  a{
+    color: white;
+  }
+
+}
