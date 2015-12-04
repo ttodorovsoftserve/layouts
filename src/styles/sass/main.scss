@@ -33,9 +33,6 @@ body.not-logged-in {
         }
 
         .custom-width {
-            //margin-left: 360px;
-            //width: 460px;
-
             .info {
                 padding-left: 0;
                 color: #ffffff;
@@ -111,6 +108,20 @@ body.not-logged-in {
                         letter-spacing: 6px;
                         padding-bottom: 12px;
                         outline: none;
+                    }
+                    select {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background: url("../images/drop-down-arrow.png") calc(100% - 10px) 10px no-repeat; /*Adds background-image*/
+                        background-size: 10px;
+                        text-indent: 0.01px;
+                        text-overflow: "";
+                        cursor: pointer;
+
+                    }
+
+                    select::-ms-expand {
+                        display: none;
                     }
 
                     option {
