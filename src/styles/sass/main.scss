@@ -2,7 +2,7 @@ body.not-logged-in {
     background-color: #0099E0;
     font-family: verdana, sans-serif;
 
-    &.vcenter {
+    &.sign-up {
         height: 100vh;
         margin: 0;
         display: flex;
@@ -15,8 +15,8 @@ body.not-logged-in {
     }
 
     main {
-        margin-top: 190px;
-        margin-bottom: 160px;
+        margin-top: 19.58vh;
+        margin-bottom: 16.6vh;
 
         .info-centered {
             text-align: center;
@@ -33,12 +33,14 @@ body.not-logged-in {
         }
 
         .custom-width {
-
             .info {
                 padding-left: 0;
                 color: #ffffff;
                 font-style: italic;
                 font-size: 120%;
+            }
+            p {
+                margin-bottom: 0;
             }
 
             h1 {
@@ -52,18 +54,63 @@ body.not-logged-in {
                         font-size: 120%;
                         font-weight: 100;
                         color: #B1DFF5;
-                        margin-top: 32px;
+                        margin-top: 30px;
                         padding-left: 0;
                     }
 
                     input, select {
-                        width: 250px;
+                        //line-height: 40px;
+                        //width: 268px;
                         background: transparent;
                         color: #ffffff;
                         border-bottom: 2px solid #fff !important;
                         font-size: 120%;
-                        margin-top: 32px;
+                        margin-top: 30px;
                         border: 0px none;
+                        padding-left: 9px;
+                        padding-right: 9px;
+                    }
+
+                    input[type="password"] {
+                        height: 28px;
+                        font-size: 140%;
+                        font-weight: bold;
+                        letter-spacing: 6px;
+                        padding-bottom: 12px;
+                        outline: none;
+                    }
+
+                    //input[type="password"]::-webkit-input-placeholder {
+                    //height: 28px;
+                    //    font-size: 140%;
+                    //    font-weight: bold;
+                    //    letter-spacing: 6px;
+                    //    padding-bottom: 12px;
+                    //    outline: none;
+                    //}
+                    //input[type="password"]:-moz-placeholder {
+                    //height: 28px;
+                    //    font-size: 140%;
+                    //    font-weight: bold;
+                    //    letter-spacing: 6px;
+                    //    padding-bottom: 12px;
+                    //    outline: none;
+                    //}
+                    //input[type="password"]::-moz-placeholder {
+                    //height: 28px;
+                    //    font-size: 140%;
+                    //    font-weight: bold;
+                    //    letter-spacing: 6px;
+                    //    padding-bottom: 12px;
+                    //    outline: none;
+                    //}
+                    input[type="password"]:-ms-input-placeholder {
+                    height: 28px;
+                        font-size: 120%;
+                        font-weight: bold;
+                        letter-spacing: 6px;
+                        padding-bottom: 12px;
+                        outline: none;
                     }
                     select {
                         -webkit-appearance: none;
@@ -73,8 +120,29 @@ body.not-logged-in {
                         text-indent: 0.01px;
                         text-overflow: "";
                         cursor: pointer;
-
                     }
+
+                    
+                    ::-webkit-input-placeholder {
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    :-moz-placeholder { /* Firefox 18- */
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    ::-moz-placeholder {  /* Firefox 19+ */
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    :-ms-input-placeholder {
+                        color: #fff;
+                        font-style: italic;
+                    }
+
 
                     select::-ms-expand {
                         display: none;
@@ -86,7 +154,7 @@ body.not-logged-in {
 
                     .add-info {
                         padding-left: 0;
-                        margin-top: 50px;
+                        margin-top: 52px;
                         color: #ffffff;
                         font-style: italic;
                         font-size: 120%;
@@ -107,24 +175,4 @@ body.not-logged-in {
             }
         }
     }
-}
-
-::-webkit-input-placeholder {
-    color: #fff;
-    font-style: italic;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-    color: #fff;
-    font-style: italic;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-    color: #fff;
-    font-style: italic;
-}
-
-:-ms-input-placeholder {
-    color: #fff;
-    font-style: italic;
 }
