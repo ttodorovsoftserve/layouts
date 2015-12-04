@@ -2,7 +2,7 @@ body.not-logged-in {
     background-color: #0099E0;
     font-family: verdana, sans-serif;
 
-    &.sign-up {
+    &.sign-out {
         height: 100vh;
         margin: 0;
         display: flex;
@@ -14,6 +14,121 @@ body.not-logged-in {
         }
     }
 
+    label {
+        font-size: 120%;
+        font-weight: 100;
+        color: #B1DFF5;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+
+    input, select {
+        //line-height: 40px;
+        //width: 268px;
+        background: transparent;
+        color: #ffffff;
+        border-bottom: 2px solid #fff !important;
+        font-size: 120%;
+        margin-top: 30px;
+        border: 0px none;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    
+
+    ::-webkit-input-placeholder {
+        color: #fff;
+        font-style: italic;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: #fff;
+        font-style: italic;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color: #fff;
+        font-style: italic;
+    }
+
+    :-ms-input-placeholder {
+        color: #fff;
+        font-style: italic;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &.sign-in {
+        font-size: 1.6rem;
+        font-style: normal;
+
+        ::-webkit-input-placeholder {
+            font-style: normal;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            font-style: normal;
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+            font-style: normal;
+        }
+
+        :-ms-input-placeholder {
+            font-style: normal;
+        }
+
+        label {
+            display: block;
+            margin-left: 30px;
+            font-size: 1.6rem;
+            margin-bottom: 7px;
+
+            &.username {
+            margin-top: 60px;
+            }
+        }
+
+        input[type='text'], input[type='password'] {
+            margin-left: 14px;
+            margin-top: 16px;
+            width: 320px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 38px;
+            padding: 0 0 22px 15px;
+        }
+
+        input[type='text'] {
+            margin-top: 17px;
+            margin-bottom: 10px;
+        }
+
+        input[type='submit']{
+            font-size: 1.5rem;
+            margin-left: 14px;
+            margin-top: 46px;
+            margin-bottom: 32px;
+            width: 320px;
+            height: 68px;
+            border: none!important;
+            background-color: #fff;
+            color: #0099E0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        a{
+            color: white;
+        }
+    }
+
     main {
         margin-top: 19.58vh;
         margin-bottom: 16.6vh;
@@ -22,6 +137,11 @@ body.not-logged-in {
             text-align: center;
             color: #fff;
             font-style: italic;
+        }
+
+        h1 {
+            margin-top: 12px;
+            margin-left: 5px;
         }
 
         .btn-sign {
@@ -43,33 +163,9 @@ body.not-logged-in {
                 margin-bottom: 0;
             }
 
-            h1 {
-                text-align: center;
-                color: #ffffff;
-            }
-
             .form-wrapper {
                 form {
-                    label {
-                        font-size: 120%;
-                        font-weight: 100;
-                        color: #B1DFF5;
-                        margin-top: 30px;
-                        padding-left: 0;
-                    }
-
-                    input, select {
-                        //line-height: 40px;
-                        //width: 268px;
-                        background: transparent;
-                        color: #ffffff;
-                        border-bottom: 2px solid #fff !important;
-                        font-size: 120%;
-                        margin-top: 30px;
-                        border: 0px none;
-                        padding-left: 9px;
-                        padding-right: 9px;
-                    }
+                   
 
                     input[type="password"] {
                         height: 28px;
@@ -80,32 +176,8 @@ body.not-logged-in {
                         outline: none;
                     }
 
-                    //input[type="password"]::-webkit-input-placeholder {
-                    //height: 28px;
-                    //    font-size: 140%;
-                    //    font-weight: bold;
-                    //    letter-spacing: 6px;
-                    //    padding-bottom: 12px;
-                    //    outline: none;
-                    //}
-                    //input[type="password"]:-moz-placeholder {
-                    //height: 28px;
-                    //    font-size: 140%;
-                    //    font-weight: bold;
-                    //    letter-spacing: 6px;
-                    //    padding-bottom: 12px;
-                    //    outline: none;
-                    //}
-                    //input[type="password"]::-moz-placeholder {
-                    //height: 28px;
-                    //    font-size: 140%;
-                    //    font-weight: bold;
-                    //    letter-spacing: 6px;
-                    //    padding-bottom: 12px;
-                    //    outline: none;
-                    //}
                     input[type="password"]:-ms-input-placeholder {
-                    height: 28px;
+                        height: 28px;
                         font-size: 120%;
                         font-weight: bold;
                         letter-spacing: 6px;
@@ -120,28 +192,6 @@ body.not-logged-in {
                         text-indent: 0.01px;
                         cursor: pointer;
                     }
-
-                    
-                    ::-webkit-input-placeholder {
-                        color: #fff;
-                        font-style: italic;
-                    }
-
-                    :-moz-placeholder { /* Firefox 18- */
-                        color: #fff;
-                        font-style: italic;
-                    }
-
-                    ::-moz-placeholder {  /* Firefox 19+ */
-                        color: #fff;
-                        font-style: italic;
-                    }
-
-                    :-ms-input-placeholder {
-                        color: #fff;
-                        font-style: italic;
-                    }
-
 
                     select::-ms-expand {
                         display: none;
