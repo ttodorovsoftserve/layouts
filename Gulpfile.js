@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var htmlreplace = require('gulp-html-replace');
+var watch = require('gulp-watch');
 
 var config = {
     paths: {
@@ -10,6 +11,7 @@ var config = {
             './src/styles/*.css',
             './src/vendor/bootstrap/dist/css/bootstrap.css'
         ],
+        images: ['./src/images/*'],
         dist: './dist'
     }
 };
@@ -40,10 +42,24 @@ gulp.task('css', function() {
         .pipe(gulp.dest(config.paths.dist + '/css'));
 });
 
+gulp.task('images', function() {
+    gulp.src(config.paths.images)
+        .pipe(gulp.dest(config.paths.dist + '/images'));
+})
+
 gulp.task('watch', function() {
-    gulp.watch('src/*.html', ['html']);
-    gulp.watch('src/styles/sass/*.scss', ['sass']);
-    gulp.watch(config.paths.css, ['css']);
+    watch('src/*.html', function() {
+        gulp.start('html')
+    });
+    watch('src/styles/sass/*.scss', function() {
+        gulp.start('sass')
+    });
+    watch(config.paths.css, function() {
+        gulp.start('css')
+    });
+    watch(config.paths.images, function() {
+        gulp.start('images')
+    });
 });
 
-gulp.task('default', ['html', 'sass', 'css', 'watch']);
+gulp.task('default', ['html', 'sass', 'css', 'images', 'watch']);
