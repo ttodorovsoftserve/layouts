@@ -83,3 +83,17 @@ body.not-logged-in button:hover {
     color: #2AACE4;
 }
 
+#gender {
+    -webkit-appearance: none; /*Removes default chrome and safari style*/
+    -moz-appearance: none; /* Removes Default Firefox style*/
+    background: url("../images/drop-down-arrow.png") 320px 10px no-repeat; /*Adds background-image*/
+    background-size: 10px;
+    text-indent: 0.01px; /* Removes default arrow from firefox*/
+    text-overflow: ""; /*Removes default arrow from firefox*/
+    cursor: pointer;
+
+}
+
+select::-ms-expand {
+    display: none;
+}
