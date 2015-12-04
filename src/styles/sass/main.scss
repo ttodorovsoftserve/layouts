@@ -2,9 +2,35 @@ body.not-logged-in {
     background-color: #0099E0;
     font-family: verdana, sans-serif;
 
+    &.vcenter {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        main {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            align-self: center;   
+        }
+    }
+
     main {
         margin-top: 190px;
         margin-bottom: 160px;
+
+        .info-centered {
+            text-align: center;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .btn-sign {
+            border: none;
+            background-color: rgba(0,0,0,0);
+            color: #fff;
+            font-size: inherit;
+            padding-top: 3rem
+        }
 
         .custom-width {
             width: 460px;
