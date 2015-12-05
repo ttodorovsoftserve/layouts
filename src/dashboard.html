@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <!-- endbuild -->
+</head>
+<body class="logged-in-dashboard">
+<div class="container-fluid dashboard">
+    <div class="wrapper row">
+        <div class="col-md-10 col-md-offset-1" style="height: 1000px">
+            <div class="row dashboard-wrapper">
+                <main class="col-xs-9" style="height: 1000px">
+                    <div class="row search-wrapper">
+                        <div class="col-xs-4 logo"><img src="images/diplomat-log.PNG"/></div>
+                        <div class="col-xs-7 search">
+                            <input type="search" placeholder="search patient by name, DOB or phone" style="width: 89%"/>
+                            <button type="button" style="width: 10%">P</button></div>
+                        <div class="col-xs-1">ctrl img</div>
+                    </div>
+                    <hr/>
+                    <div class="row search-filter">
+                        <div class="col-xs-4 logo">PRACTICE STATS</div>
+                        <div class="col-xs-3 logo">
+                            <label for="time-filter">Show results for</label>
+                            <select name="time-filter" id="time-filter">
+                                <option value="Last week">Last week</option>
+                                <option value="Last month">Last month</option>
+                                <option value="Last year">Last year</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-4 logo">
+                            <label for="drug-filter">Show results for</label>
+                            <select name="drug-filter" id="drug-filter">
+                                <option value="All">All</option>
+                                <option value="Drug one">Drug one</option>
+                                <option value="Drug two">Drug two</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-1">ctrl img</div>
+                    </div>
+                    <div class="row graph">
+                        <div class="col-xs-2 col-xs-offset-1">graph img ph
+                            <div class="graph-number">24</div>
+                            <div class="graph-text"><p>Patients</p><p>referred</p></div>
+                        </div>
+                        <div class="col-xs-2">graph img ph
+                            <div class="graph-number">9</div>
+                            <div class="graph-text"><p>Packages</p><p>shipped</p></div>
+                        </div>
+                        <div class="col-xs-2">graph img ph
+                            <div class="graph-number">5</div>
+                            <div class="graph-text"><p>Prescriptions</p><p>funded</p></div>
+                        </div>
+                        <div class="col-xs-2">graph img ph
+                            <div class="graph-number">7</div>
+                            <div class="graph-text"><p>Co-pay</p><p>funded</p></div>
+                        </div>
+                        <div class="col-xs-2">graph img ph
+                            <div class="graph-number">6.5</div>
+                            <div class="graph-text"><p>Average time</p><p>to ship (days)</p></div>
+                        </div>
+                        <!--will use this to fix the grid with Sass: http://stackoverflow.com/questions/10387740/five-equal-columns-in-twitter-bootstrap-->
+                    </div>
+                    <div class="row process-load">
+                        <div class="col-xs-4">PROCESS LOAD</div>
+                    </div>
+                    <div class="row color-boxes">
+                        <div class="col-xs-2 box-one"></div>
+                        <div class="col-xs-2 box-two"></div>
+                        <div class="col-xs-2 box-three"></div>
+                        <div class="col-xs-2 box-four"></div>
+                        <div class="col-xs-2 box-five"></div>
+                        <div class="col-xs-2 box-six"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 load-text">Submission</div>
+                        <div class="col-xs-2 load-text">Investigation</div>
+                        <div class="col-xs-2 load-text">Prior auth</div>
+                        <div class="col-xs-2 load-text">Appeals</div>
+                        <div class="col-xs-2 load-text">Verification</div>
+                        <div class="col-xs-2 load-text">Shipment</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">IMPORTANT UPDATES</div>
+                        <div class="col-xs-4">MONITORED PATIENTS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <p class="bold-paragraph">CarePak™ for Hepatitis C</p>
+                            <p>New CarePak™ for Hepatitis C has been just released.</p>
+                        </div>
+                        <div class="col-xs-4"><img src="" alt="placeholder"/>
+                            <p class="bold-paragraph">John Apleseed</p>
+                            <p>Type 2 diabetes</p>
+                            <p class="fade-paragraph">Low adherance</p>
+                        </div>
+                        <div class="col-xs-4"><img src="" alt="placeholder"/>
+                            <p class="bold-paragraph">Robert Warren</p>
+                            <p>Cardiovascular</p>
+                            <p class="fade-paragraph">Low adherance</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <p class="bold-paragraph">CarePak™ for Hepatitis C</p>
+                            <p>New CarePak™ for Hepatitis C has been just released.</p>
+                        </div>
+                        <div class="col-xs-4"><img src="" alt="placeholder"/>
+                            <p class="bold-paragraph">George White</p>
+                            <p>Colon cancer</p>
+                            <p class="fade-paragraph">Disease progression</p>
+                        </div>
+                        <div class="col-xs-4"><img src="" alt="placeholder"/>
+                            <p class="bold-paragraph">Bethany Richards</p>
+                            <p>Breast cancer</p>
+                            <p class="fade-paragraph">Disease progression</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3"><a href="#">See all updates</a></div>
+                    </div>
+                </main>
+                <nav class="col-xs-3" style="height: 500px">
+                    <div class="row">
+                        <div class="col-xs-3"><img src="" alt="Betty img"/></div>
+                        <div class="col-xs-7">
+                            <p>Betty Jenkins</p>
+                            <p>Saint David's Breas...</p>
+                        </div>
+                        <div class="col-xs-2"><img src="" alt="drop down"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">ALERTS</div>
+                        <div class="col-xs-8">NOTIFICATIONS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">today</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Update RX for the prescription</p>
+                            <span class="bold-id">#27353672</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Signature needed for the</p>
+                            <p>prescription <span class="bold-id">#27353672</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Patient refused shipment for</p>
+                            <p>the prescription <span class="bold-id">#27353672</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">Tue, Nov 10</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>PSide effect recorded for the</p>
+                            <p>prescription <span class="bold-id">#27353672</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Disease progression alert</p>
+                            <p>for <span class="bold-id">George White</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">Last week</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Drug interaction alert</p>
+                            <p>for <span class="bold-id">Robert Warren</span></p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
