@@ -226,3 +226,15 @@ body.not-logged-in {
         }
     }
 }
+
+body.logged-in-dashboard {
+  background-color: #000;
+
+  main {
+    background-color: #FFF;
+  }
+
+  nav {
+    background-color: #425364;
+  }
+}
