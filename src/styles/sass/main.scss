@@ -230,8 +230,243 @@ body.not-logged-in {
 body.logged-in-dashboard {
   background-color: #000;
 
+  .dashboard-wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   main {
     background-color: #FFF;
+
+    .main-wrapper {
+      margin-left: 24px;
+
+      .row-headers {
+        color: #5C6A79;
+        font-size: 157%;
+      }
+
+      .search-wrapper {
+        margin-top: 20px;
+
+        .input-group {
+          margin-left: 25px;
+
+          input {
+            text-indent: 9px;
+            border-color: #B8C7D3;
+            height: 52px;
+          }
+
+          ::-webkit-input-placeholder {
+            color: #485661;
+            font-style: italic;
+            font-size: 120%;
+          }
+
+          :-moz-placeholder { /* Firefox 18- */
+            color: #485661;
+            font-style: italic;
+          }
+
+          ::-moz-placeholder {  /* Firefox 19+ */
+            color: #485661;
+            font-style: italic;
+          }
+
+          :-ms-input-placeholder {
+            color: #485661;
+            font-style: italic;
+          }
+
+          button {
+            height: 52px;
+
+            i {
+              width: 50px;
+              font-size: 180%;
+            }
+          }
+        }
+
+
+        img {
+          margin-top: 9px;
+        }
+      }
+
+      .search-filter {
+        color: #5C6A79;
+        margin-top: 41px;
+
+        .time-results {
+          select {
+            width: 50%;
+          }
+        }
+
+        .drug-results {
+          padding-right: 0;
+
+          select {
+            width: 70%;
+          }
+        }
+
+        label {
+          font-size: 123%;
+          font-weight: 100;
+        }
+
+        select {
+          display: inline-block;
+          margin-left: 11px;
+          font-size: 130%;
+          height: 37px;
+        }
+      }
+
+      .graph {    //this is not looking good (the graph row), will probably have to do it with flex
+        margin-top: 50px;
+
+        img {
+          margin-bottom: 10px;
+        }
+
+        img.graph-4 {
+          margin-top: 9px;
+          margin-left: 52px;
+        }
+
+        .graph-number-4 {
+          margin-top: -15px;
+          font-size: 400%;
+        }
+
+        .test-wrapper {
+          margin-left: 72px;
+        }
+
+        img.graph-5 {
+          margin-top: 16px;
+        }
+
+        .graph-number-5 {
+          margin-top: -15px;
+          font-size: 400%;
+        }
+
+        .graph-number {
+          font-size: 400%;
+        }
+
+        .graph-text {
+          margin-top: 15px;
+          //margin-left: 90px;
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .process-load {
+        margin-top: 30px;
+      }
+
+      .color-boxes {
+        margin-top: 17px;
+        height: 185px;
+
+        div {
+          border-radius: 5px;
+        }
+
+        .box-one {
+          height: 30px;
+          background-color: green;
+          margin-top: 130px;
+        }
+
+        .box-two {
+          height: 105px;
+          background-color: red;
+          margin-top: 56px;
+        }
+
+        .box-three {
+          height: 61px;
+          background-color: black;
+          margin-top: 99px;
+        }
+
+        .box-four {
+          height: 160px;
+          background-color: orange;
+        }
+
+        .box-five {
+          height: 42px;
+          background-color: blue;
+          margin-top: 118px;
+        }
+
+        .box-six {
+          height: 94px;
+          background-color: purple;
+          margin-top: 66px;
+        }
+      }
+
+      .boxes-text {
+        margin-top: -10px;
+
+        div{
+          text-align: center;
+        }
+
+        .arrow-down {
+          margin-right: 5px;
+          border-radius: 12px;
+          width: 24px;
+          display: inline-block;
+          color: #00956C;
+          border: 2px solid #00956C;
+        }
+
+        .arrow-up {
+          margin-right: 5px;
+          border-radius: 12px;
+          width: 24px;
+          display: inline-block;
+          color: #E75313;
+          border: 2px solid #E75313;
+        }
+      }
+
+      .updates-heading {
+        margin-top: 40px;
+      }
+
+      .updates-content {
+        font-size: 120%;
+        color: #425364;
+        margin-top: 41px;
+
+        .bold-paragraph {
+          font-weight: 600;
+        }
+
+        .fade-paragraph {
+          color:#C4C4C4;
+        }
+
+        .person-info {
+          margin-left: 103px;
+          margin-top: -5px;
+        }
+      }
+    }
   }
 
   nav {
