@@ -230,10 +230,10 @@ body.not-logged-in {
 body.logged-in-dashboard {
   background-color: #000;
 
-  .dashboard-wrapper {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
+  //.dashboard-wrapper {
+  //  padding-left: 45px;
+  //  padding-right: 45px;
+  //}
 
   main {
     background-color: #FFF;
@@ -359,7 +359,7 @@ body.logged-in-dashboard {
         .graph-number {
           font-size: 400%;
           margin-top: -20px;
-          padding-right: 20px;
+          padding-left: 20px;
         }
 
           p {
