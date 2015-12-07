@@ -371,6 +371,9 @@ body.logged-in {
           a {
             color: #425364;
           }
+          a:hover {
+            text-decoration: none;
+          }
         }
         td div:first-child {
           font-weight: bold;
