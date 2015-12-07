@@ -332,7 +332,8 @@ body.logged-in {
     margin-top:10px;
     & > .nav-tabs {
         float: left;
-
+        min-height: 100%;
+        background: #fff;
         margin-right: 19px;
         border: 0px none;
         border-right: 1px solid #ddd;
