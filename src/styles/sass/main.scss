@@ -326,48 +326,45 @@ body.logged-in-dashboard {
         }
       }
 
-      .graph {    //this is not looking good (the graph row), will probably have to do it with flex
-        margin-top: 50px;
+      .graph-row {    //this is not looking good (the graph row), will probably have to do it with flex
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+        -ms-justify-content: space-around;
+        justify-content: space-around;
+        width: 100%;
+
+        .left-margin {
+          margin-left: -38px;
+        }
 
         img {
+          margin-top: 40px;
+          height: 28px;
+          width: 145px;
           margin-bottom: 10px;
         }
 
-        img.graph-4 {
-          margin-top: 9px;
-          margin-left: 52px;
-        }
-
-        .graph-number-4 {
-          margin-top: -15px;
-          font-size: 400%;
-        }
-
-        .test-wrapper {
-          margin-left: 72px;
-        }
-
-        img.graph-5 {
-          margin-top: 16px;
-        }
-
-        .graph-number-5 {
-          margin-top: -15px;
-          font-size: 400%;
+        .data-wrapper {
+          margin-top: 15px;
         }
 
         .graph-number {
           font-size: 400%;
+          margin-top: -20px;
+          padding-right: 20px;
         }
-
-        .graph-text {
-          margin-top: 15px;
-          //margin-left: 90px;
 
           p {
             margin-bottom: 0;
           }
-        }
       }
 
       .process-load {
