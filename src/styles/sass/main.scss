@@ -341,7 +341,6 @@ body.logged-in {
 
         p {
           font-size: 120%;
-          //word-spacing: -3px;
           color: #7A8DA0;
           margin: 0;
           padding: 0;
@@ -355,9 +354,10 @@ body.logged-in {
       .table {
         margin-top: 25px;
         th {
-          font-weight: normal;
-          padding-bottom: 6px;
-          padding-left: 10px;
+            color: #333;
+            font-weight: normal;
+            padding-bottom: 6px;
+            padding-left: 10px;
         }
         tr {
           border-top: none;
@@ -402,7 +402,7 @@ body.logged-in {
 
       .user-menu {
         line-height: 90px;
-
+        color: #425364;
         .user-name {
           padding: 5px 10px 10px 30px;
           background: url("../images/profile.png") no-repeat;
