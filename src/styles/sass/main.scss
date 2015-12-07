@@ -1,6 +1,8 @@
+body {
+    font-family: verdana, sans-serif; }
+
 body.not-logged-in {
     background-color: #0099E0;
-    font-family: verdana, sans-serif;
 
     &.sign-out {
         height: 100vh;
@@ -224,5 +226,121 @@ body.not-logged-in {
 
             }
         }
+    }
+}
+
+body.logged-in {
+    background-color: #000;
+
+    section {
+        background-color: #fff;
+        min-height: 100vh;
+        .content {
+            font-size: 17px;
+            padding: 19px 25px;
+            .table {
+                margin-top: 25px;
+                th {
+                    font-weight: normal;
+                    padding-bottom: 4px;
+                    padding-left: 10px;
+                }
+                tr {
+                    border-top: none;
+                    border-bottom: 1px solid #ddd;
+                }
+                td {
+                    line-height: 1.65;
+                    padding-top: 6px;
+                    padding-left: 10px;
+                    padding-bottom: 9px;
+                }
+                td:first-child {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    main {
+        header {
+            height: 90px;
+            background-color: #fff;
+
+            hr {
+                height: 2px;
+                color: #E1E1E1;
+                margin: 0;
+            }
+
+            .logo-container {
+                display: inline-block;
+                background: url("../images/logo.png") no-repeat;
+                height: 90px;
+                width: 175px;
+            }
+
+            .user-menu {
+                line-height: 90px;
+
+                .user-name {
+                    padding: 5px 10px 10px 30px;
+                    background: url("../images/profile.png") no-repeat;
+                    -webkit-background-size: 25px;
+                    background-size: 25px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    aside {
+        color: white;
+        background-color: #425364;
+        position: relative;
+
+        label{
+            font-weight: normal;
+            font-size: 1.6rem;
+        }
+
+        input {
+            height: 42px;
+            font-size: 1.5rem;
+        }
+
+        select{
+            font-weight: bold;
+        }
+    }
+
+    .aside-header {
+        height: 90px;
+        font-size: 1.5rem;
+        div {
+            line-height: 90px;
+        }
+    }
+}
+
+.btn-custom {
+    border: 1px solid black;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding: 3px 20px;
+}
+
+@media screen and (min-width: 992px){
+    .aside-form {
+        padding-top: 5px;
+        min-height: calc(100vh - 90px);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .aside-form {
+        padding-top: 0;
+        min-height: 270px!important;
     }
 }
