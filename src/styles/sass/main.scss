@@ -231,17 +231,56 @@ body.not-logged-in {
 body.logged-in {
   background-color: #000;
 
+  main {
+    header {
+      height: 90px;
+      background-color: #fff;
+
+      .header-border {
+        border-bottom: 1px solid #E3E3E3;
+
+        .logo-container {
+          background: url("../images/logo.png") no-repeat;
+          height: 90px;
+        }
+        
+        .user-menu{
+          line-height: 90px;
+          
+          .user-name{
+            padding: 5px 10px 10px 30px;
+            background: url("../images/profile.png") no-repeat;
+            -webkit-background-size: 25px;
+            background-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
   aside {
     color: white;
     background-color: #425364;
+    position: relative;
   }
 
-  .aside-header{
-
+  .aside-header {
+    height: 90px;
+    div{
+      line-height: 90px;
+    }
   }
 
   .aside-form {
     height: 100vh;
   }
 
+}
+
+.btn-custom{
+  border: 1px solid black;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  padding: 3px 20px;
 }
