@@ -340,7 +340,6 @@ body.logged-in {
         text-align: center;
 
         p {
-          font-family: verdana, sans-serif;
           font-size: 120%;
           //word-spacing: -3px;
           color: #7A8DA0;
@@ -349,14 +348,15 @@ body.logged-in {
         }
       }
     }
-    .content {
+    .patient-list {
+      color: #425364;
       font-size: 17px;
-      padding: 19px 25px;
+      padding: 22px 25px;
       .table {
         margin-top: 25px;
         th {
           font-weight: normal;
-          padding-bottom: 4px;
+          padding-bottom: 6px;
           padding-left: 10px;
         }
         tr {
@@ -368,6 +368,9 @@ body.logged-in {
           padding-top: 6px;
           padding-left: 10px;
           padding-bottom: 9px;
+          a {
+            color: #425364;
+          }
         }
         td div:first-child {
           font-weight: bold;
