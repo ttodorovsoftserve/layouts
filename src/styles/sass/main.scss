@@ -230,9 +230,10 @@ body.not-logged-in {
 
 body.logged-in {
   background-color: #000;
-  
-  section{
+
+  section {
     background-color: #fff;
+    min-height: 100vh;
   }
 
   main {
@@ -240,23 +241,28 @@ body.logged-in {
       height: 90px;
       background-color: #fff;
 
-      .header-border {
-        border-bottom: 1px solid #E3E3E3;
+      hr {
+        height: 2px;
+        color: #E1E1E1;
+        margin: 0;
+      }
 
-        .logo-container {
-          background: url("../images/logo.png") no-repeat;
-          height: 90px;
-        }
-        
-        .user-menu{
-          line-height: 90px;
-          
-          .user-name{
-            padding: 5px 10px 10px 30px;
-            background: url("../images/profile.png") no-repeat;
-            -webkit-background-size: 25px;
-            background-size: 25px;
-          }
+      .logo-container {
+        display: inline-block;
+        background: url("../images/logo.png") no-repeat;
+        height: 90px;
+        width: 175px;
+      }
+
+      .user-menu {
+        line-height: 90px;
+
+        .user-name {
+          padding: 5px 10px 10px 30px;
+          background: url("../images/profile.png") no-repeat;
+          -webkit-background-size: 25px;
+          background-size: 25px;
+          margin-right: 10px;
         }
       }
     }
@@ -266,30 +272,39 @@ body.logged-in {
     color: white;
     background-color: #425364;
     position: relative;
+    
+    label{
+      font-weight: normal;
+      font-size: 1.6rem;
+    }
+
+    input {
+      height: 42px;
+      font-size: 1.5rem;
+    }
+    
+    select{
+      font-weight: bold;
+    }
   }
 
   .aside-header {
     height: 90px;
-    div{
+    font-size: 1.5rem;
+    div {
       line-height: 90px;
     }
   }
 
-  .aside-form {
-    height: 100vh;
-  }
-
 }
 
-.btn-custom{
+.btn-custom {
   border: 1px solid black;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
   padding: 3px 20px;
 }
-
-
 
 /* custom inclusion of right, left and below tabs */
 .tabs-left > .nav-tabs {
@@ -360,4 +375,18 @@ th {
   overflow-y:visible;
   width:400px; 
   margin-left:100px;
+}
+
+@media screen and (min-width: 992px){
+  .aside-form {
+    padding-top: 5px;
+    min-height: calc(100vh - 90px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .aside-form {
+    padding-top: 0;
+    min-height: 270px!important;
+  }
 }
