@@ -230,6 +230,10 @@ body.not-logged-in {
 
 body.logged-in {
   background-color: #000;
+  
+  section{
+    background-color: #fff;
+  }
 
   main {
     header {
