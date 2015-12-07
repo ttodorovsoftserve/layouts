@@ -308,75 +308,82 @@ body.logged-in {
 }
 
 /* custom inclusion of right, left and below tabs */
-.tabs-left > .nav-tabs {
-  border-bottom: 0;
+.tabs-left {
+    & > .nav-tabs {
+        float: left;
+        margin-right: 19px;
+        border-right: 1px solid #ddd;
+        & > li{
+            float: none;
+            & > a {
+                min-width: 74px;
+                margin-right: 0;
+                margin-bottom: 3px;
+                margin-right: -1px;
+            }
+        }
+        & .active > a, .active > a:hover, .active > a:focus {
+            position: relative;
+            background: #fff;
+            &:after, &:before {
+                left: 100%;
+                top: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+            }
+
+            &:after {
+                border-color: rgba(255, 255, 255, 0);
+                border-left-color: #fff;
+                border-width: 30px;
+                margin-top: -30px;
+            }
+            &:before {
+                border-color: rgba(221, 221, 221, 0);
+                border-left-color: #ddd;
+                border-width: 31px;
+                margin-top: -31px;
+            }
+        }
+    }
+    & > .tab-content {
+        float: left;
+    }
+
+    
+    .fixed-first-column {
+        position:relative;
+        .inner {
+            overflow-x:scroll;
+            overflow-y:visible;
+            width: 400px; 
+            margin-left: 150px;
+        }
+        table {
+            table-layout: fixed; 
+            width: 100%;
+            *margin-left: -100px;/*ie7*/
+            td, th {
+                vertical-align: top;
+                border-top: 1px solid #ccc;
+                padding:10px;
+                width: 150px;
+            }
+            th {
+                position:absolute;
+                *position: relative; /*ie7*/
+                left:0;
+                width: 150px;
+            }
+        }
+    }
 }
 
-.tabs-left > .nav-tabs > li{
-  float: none;
-}
 
-.tabs-left > .nav-tabs > li > a {
-  min-width: 74px;
-  margin-right: 0;
-  margin-bottom: 3px;
-}
-
-.tabs-left > .nav-tabs {
-  float: left;
-  margin-right: 19px;
-  border-right: 1px solid #ddd;
-}
-
-.tabs-left > .nav-tabs > li > a {
-  margin-right: -1px;
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
-}
-
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-}
-
-.tabs-left > .nav-tabs .active > a,
-.tabs-left > .nav-tabs .active > a:hover,
-.tabs-left > .nav-tabs .active > a:focus {
-  border-color: #ddd transparent #ddd #ddd;
-  *border-right-color: #ffffff;
-}
-
-.tabs-left .tab-content {
-    float:left;
-}
-
-table {
-  table-layout: fixed; 
-  width: 100%;
-  *margin-left: -100px;/*ie7*/
-}
-td, th {
-  vertical-align: top;
-  border-top: 1px solid #ccc;
-  padding:10px;
-  width:100px;
-}
-th {
-  position:absolute;
-  *position: relative; /*ie7*/
-  left:0; 
-  width:100px;
-}
-.outer {
-    position:relative;
-}
-.inner {
-  overflow-x:scroll;
-  overflow-y:visible;
-  width:400px; 
-  margin-left:100px;
-}
 
 @media screen and (min-width: 992px){
   .aside-form {
