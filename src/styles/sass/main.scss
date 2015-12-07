@@ -237,20 +237,40 @@ body.logged-in {
   }
 
   main {
-    header {
-      height: 90px;
-      background-color: #fff;
 
-      hr {
-        height: 2px;
-        color: #E1E1E1;
-        margin: 0;
+    .border {
+      border-bottom: 1px solid #E1E1E1;
+      height: 90px;
+    }
+
+    header.border {
+      border-bottom: 1px solid #E1E1E1;
+      height: 50px!important;
+
+      .map {
+        line-height: 50px;
+        display: inline-block;
+        margin-left: 35px;
+
+        a {
+          text-decoration: underline;
+        }
       }
+
+      .user-menu {
+        line-height: 50px;
+      }
+
+    }
+
+    header {
+      height: 85px;
+      background-color: #fff;
 
       .logo-container {
         display: inline-block;
         background: url("../images/logo.png") no-repeat;
-        height: 90px;
+        height: 80px;
         width: 175px;
       }
 
@@ -272,8 +292,8 @@ body.logged-in {
     color: white;
     background-color: #425364;
     position: relative;
-    
-    label{
+
+    label {
       font-weight: normal;
       font-size: 1.6rem;
     }
@@ -282,8 +302,8 @@ body.logged-in {
       height: 42px;
       font-size: 1.5rem;
     }
-    
-    select{
+
+    select {
       font-weight: bold;
     }
   }
@@ -359,38 +379,35 @@ body.logged-in {
         float: left;
     }
 
-    
     .fixed-first-column {
-        position:relative;
+        position: relative;
         .inner {
-            overflow-x:scroll;
-            overflow-y:visible;
-            width: 400px; 
+            overflow-x: scroll;
+            overflow-y: visible;
+            width: 400px;
             margin-left: 150px;
         }
         table {
-            table-layout: fixed; 
+            table-layout: fixed;
             width: 100%;
-            *margin-left: -100px;/*ie7*/
+            *margin-left: -100px; /*ie7*/
             td, th {
                 vertical-align: top;
                 border-top: 1px solid #ccc;
-                padding:10px;
+                padding: 10px;
                 width: 150px;
             }
             th {
-                position:absolute;
+                position: absolute;
                 *position: relative; /*ie7*/
-                left:0;
+                left: 0;
                 width: 150px;
             }
         }
     }
 }
 
-
-
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   .aside-form {
     padding-top: 5px;
     min-height: calc(100vh - 90px);
@@ -400,6 +417,6 @@ body.logged-in {
 @media screen and (max-width: 991px) {
   .aside-form {
     padding-top: 0;
-    min-height: 270px!important;
+    min-height: 270px !important;
   }
 }
