@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poc-Patiens-List</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <!-- endbuild -->
+</head>
+<body class="logged-in">
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <section class="row">
+                <header class="col-md-10 col-xs-12">
+                    <div class="row header-border">
+                        <div class="col-md-6">
+                            <div class="logo-container"></div>
+                        </div>
+                        <div class="col-md-6 text-right user-menu">
+                            <span class="user-name">User Name</span>
+                            <button class="btn btn-default btn-custom">Sign Out</button>
+                        </div>
+                    </div>
+                </header>
+                <aside class="col-md-2 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 aside-header">
+                            <div>PATIENT SEARCH</div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-md-2 col-xs-12 pull-right">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="patient-fname">Patient First Name</label>
+                                    <input type="text" id="patient-fname" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname">Patient Last Name</label>
+                                    <input type="text" id="lname" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="illness">Illness</label>
+                                    <select name="illnes" id="illness" class="form-control">
+                                        <option value="" selected>- select illnes -</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="doctor-fname">Dr. First Name</label>
+                                    <input type="text" id="doctor-fname" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="doctor-lname">Dr. Last Name</label>
+                                    <input type="text" id="doctor-lname" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="doctor-npi">Dr. NPI</label>
+                                    <input type="text" id="doctor-npi" class="form-control"/>
+                                </div>
+                                <input type="submit" value="SEARCH PATIENT" class="btn btn-primary form-control"/>
+                            </div>
+                        </div>
+                    </form>
+                </aside>
+                <div class="col-md-10 col-xs-12 content">
+                        <p>7 patients match your search criteria</p>
+                        <table class="table table-hover">
+                            <thead>
+                            <th>Patient</th>
+                            <th>Insurance</th>
+                            <th>Doctor</th>
+                            <th>Patient Contacts</th>
+                            <th>Patient ID</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div>George White</div>
+                                    <div>12/06/1976, 40 y.o.</div>
+                                    <div>Colon Cancer</div>
+                                </td>
+                                <td>
+                                    <div>United HealthCare</div>
+                                </td>
+                                <td>
+                                    <div>Lisa Dean</div>
+                                    <div>&lt;Doctor NPI&gt;</div>
+                                </td>
+                                <td>
+                                    <div>234.567.8910</div>
+                                    <div>2300 Redriver Drive, Lathrup Village, MI</div>
+                                </td>
+                                <td>
+                                    <div>736546890</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>George White</div>
+                                    <div>12/06/1976, 40 y.o.</div>
+                                    <div>Colon Cancer</div>
+                                </td>
+                                <td>
+                                    <div>United HealthCare</div>
+                                </td>
+                                <td>
+                                    <div>Lisa Dean</div>
+                                    <div>&lt;Doctor NPI&gt;</div>
+                                </td>
+                                <td>
+                                    <div>234.567.8910</div>
+                                    <div>2300 Redriver Drive, Lathrup Village, MI</div>
+                                </td>
+                                <td>
+                                    <div>736546890</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>George White</div>
+                                    <div>12/06/1976, 40 y.o.</div>
+                                    <div>Colon Cancer</div>
+                                </td>
+                                <td>
+                                    <div>United HealthCare</div>
+                                </td>
+                                <td>
+                                    <div>Lisa Dean</div>
+                                    <div>&lt;Doctor NPI&gt;</div>
+                                </td>
+                                <td>
+                                    <div>234.567.8910</div>
+                                    <div>2300 Redriver Drive, Lathrup Village, MI</div>
+                                </td>
+                                <td>
+                                    <div>736546890</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>George White</div>
+                                    <div>12/06/1976, 40 y.o.</div>
+                                    <div>Colon Cancer</div>
+                                </td>
+                                <td>
+                                    <div>United HealthCare</div>
+                                </td>
+                                <td>
+                                    <div>Lisa Dean</div>
+                                    <div>&lt;Doctor NPI&gt;</div>
+                                </td>
+                                <td>
+                                    <div>234.567.8910</div>
+                                    <div>2300 Redriver Drive, Lathrup Village, MI</div>
+                                </td>
+                                <td>
+                                    <div>736546890</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>George White</div>
+                                    <div>12/06/1976, 40 y.o.</div>
+                                    <div>Colon Cancer</div>
+                                </td>
+                                <td>
+                                    <div>United HealthCare</div>
+                                </td>
+                                <td>
+                                    <div>Lisa Dean</div>
+                                    <div>&lt;Doctor NPI&gt;</div>
+                                </td>
+                                <td>
+                                    <div>234.567.8910</div>
+                                    <div>2300 Redriver Drive, Lathrup Village, MI</div>
+                                </td>
+                                <td>
+                                    <div>736546890</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>George White</div>
+                                    <div>12/06/1976, 40 y.o.</div>
+                                    <div>Colon Cancer</div>
+                                </td>
+                                <td>
+                                    <div>United HealthCare</div>
+                                </td>
+                                <td>
+                                    <div>Lisa Dean</div>
+                                    <div>&lt;Doctor NPI&gt;</div>
+                                </td>
+                                <td>
+                                    <div>234.567.8910</div>
+                                    <div>2300 Redriver Drive, Lathrup Village, MI</div>
+                                </td>
+                                <td>
+                                    <div>736546890</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>George White</div>
+                                    <div>12/06/1976, 40 y.o.</div>
+                                    <div>Colon Cancer</div>
+                                </td>
+                                <td>
+                                    <div>United HealthCare</div>
+                                </td>
+                                <td>
+                                    <div>Lisa Dean</div>
+                                    <div>&lt;Doctor NPI&gt;</div>
+                                </td>
+                                <td>
+                                    <div>234.567.8910</div>
+                                    <div>2300 Redriver Drive, Lathrup Village, MI</div>
+                                </td>
+                                <td>
+                                    <div>736546890</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+</body>
+</html>
