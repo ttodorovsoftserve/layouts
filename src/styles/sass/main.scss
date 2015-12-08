@@ -269,7 +269,7 @@ body.logged-in {
 
     header.border {
       border-bottom: 1px solid #E1E1E1;
-      height: 50px!important;
+      height: 50px !important;
 
       .map {
         line-height: 50px;
@@ -374,10 +374,10 @@ body.logged-in {
       .table {
         margin-top: 25px;
         th {
-            color: #333;
-            font-weight: normal;
-            padding-bottom: 6px;
-            padding-left: 10px;
+          color: #333;
+          font-weight: normal;
+          padding-bottom: 6px;
+          padding-left: 10px;
         }
         tr {
           border-top: none;
@@ -505,89 +505,127 @@ body.logged-in {
 
 /* custom inclusion of right, left and below tabs */
 .tabs-left {
-    margin-top:10px;
-    & > .nav-tabs {
-        float: left;
-        min-height: 100%;
-        background: #fff;
-        margin-right: 19px;
-        border: 0px none;
-        border-right: 1px solid #ddd;
-        & > li{
-            float: none;
-            
-            & > a {
-                min-width: 74px;
-                margin-right: 0;
-                border: 0px none;
-            }
-        }
-        & .active > a, .active > a:hover, .active > a:focus {
-            border: 0px none;
-            position: relative;
 
-            background: #fff;
-            &:after, &:before {
-                left: 100%;
-                top: 50%;
-                border: solid transparent;
-                content: " ";
-                height: 0;
-                width: 0;
-                position: absolute;
-                pointer-events: none;
-            }
+  & > .nav-tabs {
+    width: 11%;
+    float: left;
+    //margin-right: 19px;
+    border-right: 1px solid #ddd;
+    & > li {
+      float: none;
+      & > a {
+        min-width: 74px;
+        margin-right: 0;
+        //margin-bottom: 3px;
+        margin-right: -1px;
+        padding: 10px 15px 9px 15px;
+      }
+    }
+    & .active > a, .active > a:hover, .active > a:focus {
+      border: 0px none;
+      position: relative;
+      background: #fff;
+      &:after, &:before {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
 
-            &:after {
-                border-color: rgba(255, 255, 255, 0);
-                border-left-color: #fff;
-                border-width: 11px;
-                margin-top: -11px;
-            }
-            &:before {
-                border-color: rgba(221, 221, 221, 0);
-                border-left-color: #ddd;
-                border-width: 12px;
-                margin-top: -12px;
-            }
-        }
+      &:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-left-color: #fff;
+        border-width: 17px;
+        margin-top: -17px;
+      }
+      &:before {
+        border-color: rgba(221, 221, 221, 0);
+        border-left-color: #ddd;
+        border-width: 18px;
+        margin-top: -18px;
+      }
     }
-    & > .tab-content {
-        float: left;
-    }
+  }
+  & > .tab-content {
+    float: left;
+    width: 89%;
+    background-color: #F4F6F8;
+    padding: 15px 0 15px 15px;
+  }
 
-    .fixed-first-column {
-        position: relative;
-        .inner {
-            overflow-x: scroll;
-            overflow-y: visible;
-            width: 400px;
-            margin-left: 150px;
-        }
-        table {
-            table-layout: fixed;
-            width: 100%;
-            *margin-left: -100px; /*ie7*/
-            td, th {
-                vertical-align: top;
-                border-top: 1px solid #ccc;
-                padding: 10px;
-                width: 150px;
-            }
-            th {
-                position: absolute;
-                *position: relative; /*ie7*/
-                left: 0;
-                width: 150px;
-            }
-        }
+  .fixed-first-column {
+    position: relative;
+    .inner {
+      overflow-x: scroll;
+      overflow-y: visible;
+      width: auto;
+      //max-width: 994px;
+      margin-left: 150px;
+
     }
+    table {
+      table-layout: fixed;
+      width: 100%;
+      *margin-left: -100px; /*ie7*/
+      td, th {
+        vertical-align: top;
+        //border-top: 1px solid #ccc;
+        padding: 10px;
+        width: 150px;
+        font-weight: bold;
+      }
+      td {
+        padding-top: 10px;
+      }
+      th {
+        position: absolute;
+        *position: relative; /*ie7*/
+        left: 0;
+        font-weight: normal;
+        width: 150px;
+        border-right: 1px solid #CAD7E3;
+      }
+    }
+  }
+}
+
+.table-border {
+  width: 750px !important;
+
+  .border-bottom {
+    border-bottom: 1px solid #CAD7E3;
+  }
+
+  .border-right {
+    border-right: 1px solid #CAD7E3;
+  }
+
+  .table-cell {
+    width: 195px !important;
+  }
+}
+
+.medications-table-container {
+  padding-right: 0 !important;
+
+  .nav.nav-tabs {
+    background-color: #fff;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: none !important;
+    padding-top: 15px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
     .aside-form {
         padding-top: 5px;
         min-height: calc(100vh - 90px);
+        bottom: 0;
     }
 }
 
