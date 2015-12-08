@@ -374,10 +374,10 @@ body.logged-in {
       .table {
         margin-top: 25px;
         th {
-            color: #333;
-            font-weight: normal;
-            padding-bottom: 6px;
-            padding-left: 10px;
+          color: #333;
+          font-weight: normal;
+          padding-bottom: 6px;
+          padding-left: 10px;
         }
         tr {
           border-top: none;
@@ -473,17 +473,20 @@ body.logged-in {
 
 /* custom inclusion of right, left and below tabs */
 .tabs-left {
+
   & > .nav-tabs {
+    width: 11%;
     float: left;
-    margin-right: 19px;
+    //margin-right: 19px;
     border-right: 1px solid #ddd;
     & > li {
       float: none;
       & > a {
         min-width: 74px;
         margin-right: 0;
-        margin-bottom: 3px;
+        //margin-bottom: 3px;
         margin-right: -1px;
+        padding: 10px 15px 9px 15px;
       }
     }
     & .active > a, .active > a:hover, .active > a:focus {
@@ -517,11 +520,11 @@ body.logged-in {
   }
   & > .tab-content {
     float: left;
+    width: 89%;
     background-color: #F4F6F8;
     padding: 15px 0 15px 15px;
-    width: 90%;
   }
-  
+
   .fixed-first-column {
     position: relative;
     .inner {
@@ -543,7 +546,7 @@ body.logged-in {
         width: 150px;
         font-weight: bold;
       }
-      td{
+      td {
         padding-top: 10px;
       }
       th {
@@ -580,16 +583,18 @@ body.logged-in {
   .nav.nav-tabs {
     background-color: #fff;
     border-top: 1px solid #DDDDDD;
-    border-bottom: none!important;
+    border-bottom: none !important;
     padding-top: 15px;
   }
 
 }
 
 @media screen and (min-width: 992px) {
+
   .aside-form {
     padding-top: 5px;
     min-height: calc(100vh - 90px);
+    bottom: 0;
   }
 }
 
