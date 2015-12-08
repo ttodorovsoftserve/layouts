@@ -23,7 +23,8 @@ var config = {
 gulp.task('html', function() {
     gulp.src(config.paths.html)
         .pipe(htmlreplace({
-            'css': 'css/bundle.css'
+            'css': 'css/bundle.css',
+            'js': 'js/bundle.js'
         }))
         .pipe(gulp.dest(config.paths.dist));
 
