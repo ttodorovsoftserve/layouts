@@ -639,6 +639,17 @@ body.logged-in {
   }
 }
 
+.tabs-left .nav-tabs li span {
+  display: block;
+  width: 100%;
+}
+.tabs-left .nav-tabs li span, .tabs-left td, .tabs-left th {
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
 /* custom inclusion of right, left and below tabs */
 .tabs-left {
   border-top: 1px solid #DDDDDD;
