@@ -261,6 +261,7 @@ body.logged-in {
   }
 
   main {
+    overflow: hidden;
 
     .border {
       border-bottom: 1px solid #E1E1E1;
@@ -625,7 +626,13 @@ body.logged-in {
     .aside-form {
         padding-top: 5px;
         min-height: calc(100vh - 90px);
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
         bottom: 0;
+    }
+    body.not-logged-in section.main > div {
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
     }
 }
 
