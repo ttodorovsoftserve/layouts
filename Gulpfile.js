@@ -8,8 +8,13 @@ var config = {
     paths: {
         html: ['./src/*.html'],
         css: [
-            './src/styles/*.css',
-            './src/vendor/bootstrap/dist/css/bootstrap.css'
+            './src/vendor/bootstrap/dist/css/bootstrap.css',
+            './src/styles/*.css'
+        ],
+        js: [
+            './src/vendor/jquery/dist/jquery.js',
+            './src/vendor/bootstrap/dist/js/bootstrap.js',
+            './src/js/**/*.js'
         ],
         images: ['./src/images/*'],
         dist: './dist'
@@ -19,7 +24,8 @@ var config = {
 gulp.task('html', function() {
     gulp.src(config.paths.html)
         .pipe(htmlreplace({
-            'css': 'css/bundle.css'
+            'css': 'css/bundle.css',
+            'js': 'js/bundle.js'
         }))
         .pipe(gulp.dest(config.paths.dist));
 
@@ -42,10 +48,16 @@ gulp.task('css', function() {
         .pipe(gulp.dest(config.paths.dist + '/css'));
 });
 
+gulp.task('js', function() {
+    gulp.src(config.paths.js)
+        .pipe(concat('bundle.js'))
+        .pipe(gulp.dest(config.paths.dist + '/js'));
+});
+
 gulp.task('images', function() {
     gulp.src(config.paths.images)
         .pipe(gulp.dest(config.paths.dist + '/images'));
-})
+});
 
 gulp.task('watch', function() {
     watch('src/*.html', function() {
@@ -57,9 +69,12 @@ gulp.task('watch', function() {
     watch(config.paths.css, function() {
         gulp.start('css')
     });
+    watch(config.paths.js, function() {
+        gulp.start('js')
+    });
     watch(config.paths.images, function() {
         gulp.start('images')
     });
 });
 
-gulp.task('default', ['html', 'sass', 'css', 'images', 'watch']);
+gulp.task('default', ['html', 'sass', 'css', 'js', 'images', 'watch']);

@@ -35,12 +35,14 @@ body.not-logged-in {
   &.sign-out {
     height: 100vh;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    position: relative;
     main {
       margin-top: 0px;
       margin-bottom: 0px;
-      align-self: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -146,7 +148,7 @@ body.not-logged-in {
       }
     }
 
-    input[type='text'], input[type='password'] {
+    input {
       margin-left: 14px;
       margin-top: 16px;
       width: 320px;
@@ -155,6 +157,25 @@ body.not-logged-in {
       box-sizing: border-box;
       height: 38px;
       padding: 0 0 22px 15px;
+      outline: none;
+    }
+
+    input[type="password"] {
+      font-size: 120%;
+      font-weight: bold;
+      letter-spacing: 6px;
+    }
+
+    input[type="password"]:-ms-input-placeholder {
+      letter-spacing: 0px;
+    }
+
+    input[type="password"]::-webkit-input-placeholder {
+      letter-spacing: 0px;
+    }
+
+    input[type="password"]::-moz-placeholder {
+      letter-spacing: 0px;
     }
 
     input[type='text'] {
@@ -163,7 +184,8 @@ body.not-logged-in {
     }
 
     input[type='submit'] {
-      font-size: 1.5rem;
+      font-size: 120%;
+      padding: 0;
       margin-left: 14px;
       margin-top: 46px;
       margin-bottom: 32px;
@@ -218,6 +240,10 @@ body.not-logged-in {
 
       .form-wrapper {
         form {
+
+          input[type="text"], input[type="tel"] {
+            outline: none;
+          }
 
           input[type="password"] {
             height: 28px;
@@ -288,6 +314,7 @@ body.logged-in {
   }
 
   main {
+    overflow: hidden;
 
     .border {
       border-bottom: 1px solid #E1E1E1;
@@ -375,25 +402,7 @@ body.logged-in {
   section {
     background-color: #fff;
     min-height: 100vh;
-    .logged-in-wrapper {
-      min-height: calc(100vh - 90px);
-      display: flex;
-      display: -ms-flexbox;
-      align-items: center;
-      -ms-flex-pack: center;
-
-      .logged-in-content {
-        margin: 0 auto;
-        text-align: center;
-
-        p {
-          font-size: 120%;
-          color: #7A8DA0;
-          margin: 0;
-          padding: 0;
-        }
-      }
-    }
+    
     .patient-list {
       color: #425364;
       font-size: 17px;
@@ -533,9 +542,91 @@ body.logged-in {
   margin: 60px 10px 10px 15px;
 }
 
+  section {
+    min-height: 100vh;
+    background-color: #ffffff;
+
+    .logged-in-wrapper {
+      min-height: calc(100vh - 90px);
+      position: relative;
+
+      .logged-in-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        p {
+          font-family: verdana, sans-serif;
+          font-size: 120%;
+          //word-spacing: -3px;
+          color: #7A8DA0;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    @media screen and (max-width: 991px) {
+      .aside-form {
+        padding-top: 0;
+        min-height: 270px !important;
+      }
+    }
+  }
+
+.table-border {
+  width: 750px !important;
+
+  .border-bottom {
+    border-bottom: 1px solid #CAD7E3;
+  }
+
+  .border-right {
+    border-right: 1px solid #CAD7E3;
+  }
+
+  .table-cell {
+    width: 195px !important;
+  }
+}
+
+.medications-table-container {
+  padding-right: 0 !important;
+
+  .nav.nav-tabs {
+    background-color: #fff;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: none !important;
+    padding-top: 15px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+    .aside-form {
+        padding-top: 5px;
+        min-height: calc(100vh - 90px);
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+        bottom: 0;
+    }
+    body.not-logged-in section.main > div {
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+  .aside-form {
+    padding-top: 0;
+    min-height: 305px !important;
+  }
+}
+
 /* custom inclusion of right, left and below tabs */
 .tabs-left {
-
+  background-color: #F4F6F8;
   & > .nav-tabs {
     width: 11%;
     float: left;
@@ -550,6 +641,7 @@ body.logged-in {
         margin-right: -1px;
         padding: 10px 15px 9px 15px;
       }
+
     }
     & .active > a, .active > a:hover, .active > a:focus {
       border: 0px none;
@@ -583,12 +675,14 @@ body.logged-in {
   & > .tab-content {
     float: left;
     width: 89%;
-    background-color: #F4F6F8;
+
     padding: 15px 0 15px 15px;
   }
 
   .fixed-first-column {
     position: relative;
+    border-right: 1px solid #ddd;
+    margin-right: 30px;
     .inner {
       overflow-x: scroll;
       overflow-y: visible;
@@ -620,48 +714,5 @@ body.logged-in {
         border-right: 1px solid #CAD7E3;
       }
     }
-  }
-}
-
-.table-border {
-  width: 750px !important;
-
-  .border-bottom {
-    border-bottom: 1px solid #CAD7E3;
-  }
-
-  .border-right {
-    border-right: 1px solid #CAD7E3;
-  }
-
-  .table-cell {
-    width: 195px !important;
-  }
-}
-
-.medications-table-container {
-  padding-right: 0 !important;
-
-  .nav.nav-tabs {
-    background-color: #fff;
-    border-top: 1px solid #DDDDDD;
-    border-bottom: none !important;
-    padding-top: 15px;
-  }
-
-}
-
-@media screen and (min-width: 992px) {
-  .aside-form {
-    padding-top: 5px;
-    min-height: calc(100vh - 90px);
-    bottom: 0;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .aside-form {
-    padding-top: 0;
-    min-height: 305px !important;
   }
 }
