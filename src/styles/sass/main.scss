@@ -339,6 +339,43 @@ body.logged-in {
               }
           }
       }
+
+    .personal-clinical {
+      font-family: verdana, san-serif;
+
+      .line {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        height: 2px;
+        background-color: #F4F6F8;
+      }
+
+      margin-top: 32px;
+      .bold {
+        font-weight: 600;
+        color:#435363;
+      }
+      .size {
+        font-size: 20px;
+        color:#435363;
+      }
+      .size-top {
+        margin-top: 8px;
+      }
+      .size-data {
+        font-size: 120%;
+      }
+      .move-right {
+
+        left:30px;
+      }
+      .border {
+        border-bottom: solid;
+        color: #F4F6F8;
+      }
+
+    }
+
     @media screen and (max-width: 991px) {
         .aside-form {
             padding-top: 0;
@@ -346,3 +383,4 @@ body.logged-in {
         }
     }
 }
+

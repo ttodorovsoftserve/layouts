@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signed In</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <!-- endbuild -->
+</head>
+<body class="logged-in">
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <section class="row main">
+                <header class="col-md-10 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pull-right user-menu">
+                                <span class="user-name">User Name</span>
+                                <button class="btn btn-default btn-custom">Sign Out</button>
+                            </div>
+                            <div class="logo-container"></div>
+                            <hr/>
+                        </div>
+                    </div>
+                </header>
+                <aside class="col-md-2 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 aside-header">
+                            <div>PATIENT SEARCH</div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-md-2 col-xs-12 pull-right aside-form">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-6">
+                                <div class="form-group">
+                                    <label for="patient-fname">Patient First Name</label>
+                                    <input type="text" id="patient-fname" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname">Patient Last Name</label>
+                                    <input type="text" id="lname" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="illness">Illness</label>
+                                    <select name="illnes" id="illness" class="form-control">
+                                        <option value="" selected>- select illness -</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-6">
+                                <div class="form-group">
+                                    <label for="doctor-fname">Dr. First Name</label>
+                                    <input type="text" id="doctor-fname" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="doctor-lname">Dr. Last Name</label>
+                                    <input type="text" id="doctor-lname" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="doctor-npi">Dr. NPI</label>
+                                    <input type="text" id="doctor-npi" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <input type="submit" value="SEARCH PATIENT" class="btn btn-primary form-control"/>
+                            </div>
+                        </div>
+
+                    </form>
+                </aside>
+                <div class="col-md-10 col-xs-12">
+                    <!--<div class="logged-in-wrapper">-->
+                        <!--<div class="logged-in-content">-->
+                            <!--<p>Do the search on your right</p>-->
+                            <!--<p>to get results.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="row personal-clinical">
+                        <div class="col-md-6 move-right"><span class="size">PERSONAL</span>
+                            <div class="row">
+                                <div class="col-md-11 line"></div>
+                            </div>
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">Patient Name:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">George White</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">DOB:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">12/06/1976</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">Age:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">40</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">Sex:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">Male</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">DiplomatID:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">637839</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">Address:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">2300 Redriver Drive, Lthrup Village,MI</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">Zip:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">48076</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">Phone:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">234.567.8910</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">Alt Phone:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">--</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-3">
+                                    <p class="size-data">E-mail:</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="bold">g.white@gmail.com</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6"><span class="size col-md-offset-2">CLINICAL</span>
+                            <div class="row">
+                                <div class="col-md-9 col-md-offset-2 line"></div>
+                            </div>
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">Primary Illness:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">Colon Cancer</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">Secondary Illness:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">--</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">Diagnosis:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">--</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">Primary Insurance:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">United Health</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">Secondary Insurance:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">--</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">Assigned PCC:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">Janice McLaughlin</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">Dispensing locations:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">Flint,MI</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">DSP Account Rep:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">John Ledger</p>
+                                </div>
+                            </div>
+
+                            <div class="row size-top">
+                                <div class="col-md-5 col-md-offset-2">
+                                    <p class="size-data">DSP Account Rep Phone:</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bold">234.567.8910</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+</body>
+</html>
