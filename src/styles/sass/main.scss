@@ -402,34 +402,33 @@ body.logged-in {
     }
 
     .personal-clinical {
-        margin: 32px 0 0 30px;
+      margin: 32px 0 0 30px;
 
-        .line {
-            margin-top: 15px;
-            margin-bottom: 10px;
-            height: 2px;
-            background-color: #F4F6F8;
-        }
+      .line {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        height: 2px;
+        background-color: #F4F6F8;
+      }
 
-        
-        .bold {
-            font-weight: 600;
-            color:#435363;
-        }
-        .size {
-            font-size: 20px;
-            color:#435363;
-        }
-        .size-top {
-            margin-top: 8px;
-        }
-        .size-data {
-            font-size: 120%;
-        }
-        .border {
-            border-bottom: solid;
-            color: #F4F6F8;
-        }
+      .bold {
+        font-weight: 600;
+        color: #435363;
+      }
+      .size {
+        font-size: 20px;
+        color: #435363;
+      }
+      .size-top {
+        margin-top: 8px;
+      }
+      .size-data {
+        font-size: 120%;
+      }
+      .border {
+        border-bottom: solid;
+        color: #F4F6F8;
+      }
 
     }
   }
@@ -501,6 +500,10 @@ body.logged-in {
   -moz-border-radius: 7px;
   border-radius: 7px;
   padding: 3px 20px;
+}
+
+.medications-header {
+  margin: 60px 10px 10px 15px;
 }
 
 /* custom inclusion of right, left and below tabs */
@@ -622,16 +625,16 @@ body.logged-in {
 }
 
 @media screen and (min-width: 992px) {
-    .aside-form {
-        padding-top: 5px;
-        min-height: calc(100vh - 90px);
-        bottom: 0;
-    }
+  .aside-form {
+    padding-top: 5px;
+    min-height: calc(100vh - 90px);
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .aside-form {
-        padding-top: 0;
-        min-height: 305px !important;
-    }
+  .aside-form {
+    padding-top: 0;
+    min-height: 305px !important;
+  }
 }
