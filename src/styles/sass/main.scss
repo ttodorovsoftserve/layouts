@@ -1,6 +1,9 @@
+body {
+  font-family: verdana, sans-serif;
+}
+
 body.not-logged-in {
   background-color: #0099E0;
-  font-family: verdana, sans-serif;
 
   &.sign-out {
     height: 100vh;
@@ -12,6 +15,27 @@ body.not-logged-in {
       margin-bottom: 0px;
       align-self: center;
     }
+  }
+
+  label {
+    font-size: 120%;
+    font-weight: 100;
+    color: #B1DFF5;
+    margin-top: 30px;
+    padding-left: 0;
+  }
+
+  input, select {
+    //line-height: 40px;
+    //width: 268px;
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 2px solid #fff !important;
+    font-size: 120%;
+    margin-top: 30px;
+    border: 0px none;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 
   label {
@@ -316,7 +340,127 @@ body.logged-in {
       padding-top: 10px;
     }
   }
+}
 
+body.logged-in {
+  background-color: #000;
+
+  section {
+    background-color: #fff;
+    min-height: 100vh;
+    .logged-in-wrapper {
+      min-height: calc(100vh - 90px);
+      display: flex;
+      display: -ms-flexbox;
+      align-items: center;
+      -ms-flex-pack: center;
+
+      .logged-in-content {
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+          font-size: 120%;
+          color: #7A8DA0;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    .patient-list {
+      color: #425364;
+      font-size: 17px;
+      padding: 22px 25px;
+      .table {
+        margin-top: 25px;
+        th {
+            color: #333;
+            font-weight: normal;
+            padding-bottom: 6px;
+            padding-left: 10px;
+        }
+        tr {
+          border-top: none;
+          border-bottom: 1px solid #ddd;
+        }
+        td {
+          line-height: 1.65;
+          padding-top: 6px;
+          padding-left: 10px;
+          padding-bottom: 9px;
+          a {
+            color: #425364;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+        }
+        td div:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  main {
+    header {
+      height: 90px;
+      background-color: #fff;
+
+      hr {
+        height: 2px;
+        color: #E1E1E1;
+        margin: 0;
+      }
+
+      .logo-container {
+        display: inline-block;
+        background: url("../images/logo.png") no-repeat;
+        height: 90px;
+        width: 175px;
+      }
+
+      .user-menu {
+        line-height: 90px;
+        color: #425364;
+        .user-name {
+          padding: 5px 10px 10px 30px;
+          background: url("../images/profile.png") no-repeat;
+          -webkit-background-size: 25px;
+          background-size: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  aside {
+    color: white;
+    background-color: #425364;
+    position: relative;
+
+    label {
+      font-weight: normal;
+      font-size: 1.6rem;
+    }
+
+    input {
+      height: 42px;
+      font-size: 1.5rem;
+    }
+
+    select {
+      font-weight: bold;
+    }
+  }
+
+  .aside-header {
+    height: 90px;
+    font-size: 1.5rem;
+    div {
+      line-height: 90px;
+    }
+  }
 }
 
 .btn-custom {
@@ -331,14 +475,14 @@ body.logged-in {
 .tabs-left {
   & > .nav-tabs {
     float: left;
-    //margin-right: 19px;
+    margin-right: 19px;
     border-right: 1px solid #ddd;
     & > li {
       float: none;
       & > a {
         min-width: 74px;
         margin-right: 0;
-        //margin-bottom: 3px;
+        margin-bottom: 3px;
         margin-right: -1px;
       }
     }
@@ -346,7 +490,6 @@ body.logged-in {
       border: 0px none;
       position: relative;
       background: #fff;
-      font-weight: bold;
       &:after, &:before {
         left: 100%;
         top: 50%;
@@ -453,6 +596,6 @@ body.logged-in {
 @media screen and (max-width: 991px) {
   .aside-form {
     padding-top: 0;
-    min-height: 270px !important;
+    min-height: 305px !important;
   }
 }
