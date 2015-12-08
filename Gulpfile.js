@@ -13,6 +13,7 @@ var config = {
         ],
         js: [
             './src/vendor/jquery/dist/jquery.js',
+            './src/vendor/bootstrap/dist/js/bootstrap.js',
             './src/js/**/*.js'
         ],
         images: ['./src/images/*'],
