@@ -13,8 +13,7 @@ var config = {
         ],
         js: [
             './src/vendor/jquery/dist/jquery.js',
-            './src/vendor/bootstrap/dist/js/bootstrap.js',
-            './src/js/**/*.js'
+            './src/vendor/bootstrap/dist/js/bootstrap.js'
         ],
         images: ['./src/images/*'],
         fonts: ['./src/fonts/*'],
@@ -53,6 +52,10 @@ gulp.task('js', function() {
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest(config.paths.dist + '/js'));
 });
+gulp.task('jsstatic', function() {
+    gulp.src('./src/js/overflow.js')
+        .pipe(gulp.dest(config.paths.dist + '/js'));
+});
 
 gulp.task('images', function() {
     gulp.src(config.paths.images)
@@ -85,4 +88,4 @@ gulp.task('watch', function() {
     });
 });
 
-gulp.task('default', ['html', 'sass', 'css', 'js', 'images', 'fonts', 'watch']);
+gulp.task('default', ['html', 'sass', 'css', 'js', 'jsstatic', 'images', 'fonts', 'watch']);

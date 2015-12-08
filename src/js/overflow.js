@@ -1,7 +1,6 @@
 'use strict';
 $(document).ready(function () {
     var showTooltip = function () {
-    	
     	var docs = $('.tabs-left .nav-tabs li a span,.tabs-left td,.tabs-left th');
     	$('[data-toggle="tooltip"]').tooltip('destroy');
 
@@ -17,6 +16,7 @@ $(document).ready(function () {
                 $(docs[i]).attr({
                     'data-toggle': 'tooltip',
                     'data-trigger': 'hover',
+                    'data-container': 'body',
                     'data-title': $(docs[i]).text()
                 });
             }
@@ -27,5 +27,6 @@ $(document).ready(function () {
     $(window).resize(function () {
         showTooltip();
     });
+    $('.nav-tabs a[data-toggle="tab"]').on('shown.bs.tab', showTooltip);
     showTooltip();
 });

@@ -656,7 +656,7 @@ body.logged-in {
   background-color: #F4F6F8;
   overflow: hidden;
   & > .nav-tabs {
-    width: 11%;
+    width: 14%;
     float: left;
     //margin-right: 19px;
     border-right: 1px solid #ddd;
@@ -706,7 +706,7 @@ body.logged-in {
   & > .tab-content {
     //border-top: 1px solid #DDDDDD;
     float: left;
-    width: calc(89% - 20px);
+    width: calc(86% - 20px);
 
     padding: 15px 0 15px 40px;
   }
