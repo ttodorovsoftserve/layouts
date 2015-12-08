@@ -1,5 +1,32 @@
+@font-face {
+  font-family: 'ProximaNovaA-Bold';
+  src: url('../fonts/2EE99B_1_0.eot');
+  src: url('../fonts/2EE99B_1_0.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/2EE99B_1_0.woff2') format('woff2'),
+  url('../fonts/2EE99B_1_0.woff') format('woff'),
+  url('../fonts/2EE99B_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNovaA-Regular';
+  src: url('../fonts/2EE99B_5_0.eot');
+  src: url('../fonts/2EE99B_5_0.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/2EE99B_5_0.woff2') format('woff2'),
+  url('../fonts/2EE99B_5_0.woff') format('woff'),
+  url('../fonts/2EE99B_5_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNovaA-MediumIt';
+  src: url('../fonts/2EE99B_1C_0.eot');
+  src: url('../fonts/2EE99B_1C_0.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/2EE99B_1C_0.woff2') format('woff2'),
+  url('../fonts/2EE99B_1C_0.woff') format('woff'),
+  url('../fonts/2EE99B_1C_0.ttf') format('truetype');
+}
+
 body {
-  font-family: verdana, sans-serif;
+  font-family: 'ProximaNovaA-Regular', verdana, sans-serif;
 }
 
 body.not-logged-in {
@@ -20,7 +47,7 @@ body.not-logged-in {
   }
 
   label {
-    font-size: 120%;
+    font-size: 128%;
     font-weight: 100;
     color: #B1DFF5;
     margin-top: 30px;
@@ -33,7 +60,7 @@ body.not-logged-in {
     background: transparent;
     color: #ffffff;
     border-bottom: 2px solid #fff !important;
-    font-size: 120%;
+    font-size: 128%;
     margin-top: 30px;
     border: 0px none;
     padding-left: 9px;
@@ -41,7 +68,7 @@ body.not-logged-in {
   }
 
   label {
-    font-size: 120%;
+    font-size: 128%;
     font-weight: 100;
     color: #B1DFF5;
     margin-top: 30px;
@@ -54,7 +81,7 @@ body.not-logged-in {
     background: transparent;
     color: #ffffff;
     border-bottom: 2px solid #fff !important;
-    font-size: 120%;
+    font-size: 128%;
     margin-top: 30px;
     border: 0px none;
     padding-left: 9px;
@@ -113,7 +140,7 @@ body.not-logged-in {
     label {
       display: block;
       margin-left: 30px;
-      font-size: 1.6rem;
+      font-size: 128%;
       margin-bottom: 7px;
 
       &.username {
@@ -134,7 +161,8 @@ body.not-logged-in {
     }
 
     input[type="password"] {
-      font-size: 120%;
+      font-family: verdana, sans-serif;
+      font-size: 128%;
       font-weight: bold;
       letter-spacing: 6px;
     }
@@ -157,7 +185,7 @@ body.not-logged-in {
     }
 
     input[type='submit'] {
-      font-size: 120%;
+      font-size: 128%;
       padding: 0;
       margin-left: 14px;
       margin-top: 46px;
@@ -205,7 +233,7 @@ body.not-logged-in {
         padding-left: 0;
         color: #ffffff;
         font-style: italic;
-        font-size: 120%;
+        font-size: 128%;
       }
       p {
         margin-bottom: 0;
@@ -218,7 +246,12 @@ body.not-logged-in {
             outline: none;
           }
 
+          input[type="email"] {
+            font-size: 130%;
+          }
+
           input[type="password"] {
+            font-family: verdana, sans-serif;
             height: 28px;
             font-size: 140%;
             font-weight: bold;
@@ -229,7 +262,7 @@ body.not-logged-in {
 
           input[type="password"]:-ms-input-placeholder {
             height: 28px;
-            font-size: 120%;
+            font-size: 128%;
             font-weight: bold;
             letter-spacing: 6px;
             padding-bottom: 12px;
@@ -258,7 +291,7 @@ body.not-logged-in {
             margin-top: 52px;
             color: #ffffff;
             font-style: italic;
-            font-size: 120%;
+            font-size: 128%;
           }
 
           button {
@@ -378,7 +411,7 @@ body.logged-in {
     
     .patient-list {
       color: #425364;
-      font-size: 17px;
+      font-size: 128%;
       padding: 22px 25px;
       .table {
         margin-top: 25px;
@@ -405,13 +438,15 @@ body.logged-in {
           }
         }
         td div:first-child {
-          font-weight: bold;
+          //font-weight: bold;
+          font-family: ProximaNovaA-Bold, verdana, sans-serif;
         }
       }
     }
 
     .personal-clinical {
       margin: 32px 0 0 30px;
+      word-wrap: break-word;
 
       .line {
         margin-top: 15px;
@@ -421,18 +456,20 @@ body.logged-in {
       }
 
       .bold {
+        font-family: ProximaNovaA-Bold, verdana, sans-serif;
         font-weight: 600;
+        font-size: 128%;
         color: #435363;
       }
       .size {
-        font-size: 20px;
+        font-size: 170%;
         color: #435363;
       }
       .size-top {
         margin-top: 8px;
       }
       .size-data {
-        font-size: 120%;
+        font-size: 128%;
       }
       .border {
         border-bottom: solid;
@@ -512,6 +549,8 @@ body.logged-in {
 }
 
 .medications-header {
+  font-size: 170%;
+  color: #435363;
   margin: 60px 10px 10px 15px;
 }
 
@@ -532,7 +571,7 @@ body.logged-in {
 
         p {
           font-family: verdana, sans-serif;
-          font-size: 120%;
+          font-size: 128%;
           //word-spacing: -3px;
           color: #7A8DA0;
           margin: 0;
@@ -568,10 +607,13 @@ body.logged-in {
   padding-right: 0 !important;
 
   .nav.nav-tabs {
+    font-size: 128%;
     background-color: #fff;
-    border-top: 1px solid #DDDDDD;
+   // border-top: 1px solid #DDDDDD;
     border-bottom: none !important;
     padding-top: 15px;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
   }
 
 }
@@ -610,7 +652,9 @@ body.logged-in {
 
 /* custom inclusion of right, left and below tabs */
 .tabs-left {
+  border-top: 1px solid #DDDDDD;
   background-color: #F4F6F8;
+  overflow: hidden;
   & > .nav-tabs {
     width: 11%;
     float: left;
@@ -619,15 +663,18 @@ body.logged-in {
     & > li {
       float: none;
       & > a {
+        color: #435363;
         min-width: 74px;
         margin-right: 0;
         //margin-bottom: 3px;
-        margin-right: -1px;
+        //margin-right: -1px;
         padding: 10px 15px 9px 15px;
       }
 
     }
     & .active > a, .active > a:hover, .active > a:focus {
+      font-family: 'ProximaNovaA-Bold', verdana, sans-serif;
+      color: #435363;
       border: 0px none;
       position: relative;
       background: #fff;
@@ -645,22 +692,23 @@ body.logged-in {
       &:after {
         border-color: rgba(255, 255, 255, 0);
         border-left-color: #fff;
-        border-width: 17px;
-        margin-top: -17px;
+        border-width: 13px;
+        margin-top: -13px;
       }
       &:before {
         border-color: rgba(221, 221, 221, 0);
         border-left-color: #ddd;
-        border-width: 18px;
-        margin-top: -18px;
+        border-width: 14px;
+        margin-top: -14px;
       }
     }
   }
   & > .tab-content {
+    //border-top: 1px solid #DDDDDD;
     float: left;
-    width: 89%;
+    width: calc(89% - 20px);
 
-    padding: 15px 0 15px 15px;
+    padding: 15px 0 15px 40px;
   }
 
   .fixed-first-column {
@@ -680,6 +728,8 @@ body.logged-in {
       width: 100%;
       *margin-left: -100px; /*ie7*/
       td, th {
+        font-size: 128%;
+        color: #435363;
         vertical-align: top;
         //border-top: 1px solid #ccc;
         padding: 10px;
@@ -687,6 +737,7 @@ body.logged-in {
         font-weight: bold;
       }
       td {
+        font-family: 'ProximaNovaA-Bold', verdana, sans-serif;
         padding-top: 10px;
       }
       th {
