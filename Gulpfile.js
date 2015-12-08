@@ -8,8 +8,8 @@ var config = {
     paths: {
         html: ['./src/*.html'],
         css: [
-            './src/styles/*.css',
-            './src/vendor/bootstrap/dist/css/bootstrap.css'
+            './src/vendor/bootstrap/dist/css/bootstrap.css',
+            './src/styles/*.css'
         ],
         images: ['./src/images/*'],
         dist: './dist'
