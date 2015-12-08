@@ -446,6 +446,7 @@ body.logged-in {
 
     .personal-clinical {
       margin: 32px 0 0 30px;
+      word-wrap: break-word;
 
       .line {
         margin-top: 15px;
@@ -611,6 +612,8 @@ body.logged-in {
    // border-top: 1px solid #DDDDDD;
     border-bottom: none !important;
     padding-top: 15px;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
   }
 
 }
@@ -640,6 +643,7 @@ body.logged-in {
 .tabs-left {
   border-top: 1px solid #DDDDDD;
   background-color: #F4F6F8;
+  overflow: hidden;
   & > .nav-tabs {
     width: 11%;
     float: left;
@@ -691,7 +695,7 @@ body.logged-in {
   & > .tab-content {
     //border-top: 1px solid #DDDDDD;
     float: left;
-    width: 89%;
+    width: calc(89% - 20px);
 
     padding: 15px 0 15px 40px;
   }
