@@ -29,6 +29,11 @@ body {
   font-family: 'ProximaNovaA-Regular', verdana, sans-serif;
 }
 
+input:-webkit-autofill {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
 body.not-logged-in {
   background-color: #0099E0;
 
@@ -253,7 +258,7 @@ body.not-logged-in {
       .form-wrapper {
         form {
 
-          input[type="text"], input[type="tel"] {
+          input[type="text"], input[type="tel"], input[type="email"] {
             outline: none;
           }
 
