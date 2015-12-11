@@ -121,6 +121,10 @@ body.not-logged-in {
     font-size: 1.6rem;
     font-style: normal;
 
+    h1 img {
+      margin-left: -25px;
+    }
+
     ::-webkit-input-placeholder {
       font-style: normal;
     }
@@ -223,7 +227,7 @@ body.not-logged-in {
     }
 
     .info-centered h1 {
-      margin-left: 15px;
+      //margin-left: 15px;
     }
 
     .btn-sign {
@@ -359,8 +363,12 @@ body.logged-in {
 
       .logo-container {
         display: inline-block;
-        background: url("../images/logo.png") no-repeat;
-        height: 80px;
+        background-image: url("../images/logo.png") !important;
+        background-repeat: no-repeat;
+        background-position: 0px 35px;
+        height: 90px;
+        //margin-top: 34px;
+        margin-left: 15px;
         width: 175px;
       }
 
@@ -416,9 +424,14 @@ body.logged-in {
     min-height: 100vh;
 
     .patient-list {
-      color: #425364;
+      color: #384a5b;
       font-size: 128%;
       padding: 22px 25px;
+
+      p{
+        color: #6e86a3;
+      }
+
       .table {
         margin-top: 25px;
         th {
@@ -498,13 +511,19 @@ body.logged-in {
 
       .logo-container {
         display: inline-block;
-        background: url("../images/logo.png") no-repeat;
-        height: 90px;
+        background-image: url("../images/logo.png") !important;
+        background-repeat: no-repeat;
+        background-position: 0px 35px;
+        height: 84px;
+        //margin-top: 34px;
+        margin-left: 15px;
         width: 175px;
       }
 
       .user-menu {
         line-height: 90px;
+        height: 84px;
+        overflow: hidden;
         color: #425364;
         .user-name {
           padding: 5px 10px 10px 30px;
