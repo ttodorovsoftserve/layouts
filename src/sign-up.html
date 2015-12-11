@@ -11,43 +11,44 @@
     <body class="not-logged-in">
         <main class="container sign-up">
             <div class="wrapper row">
-                <div class="col-md-6 col-md-offset-3 custom-width">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3  col-md-4 col-md-offset-4 custom-width">
                     <div class="row">
                         <h1 class="col-xs-12"><img src="images/diplomat-log.PNG" alt=""/></h1>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 info">
-                            <p>To signup please provide valid email address and
-                                strong password that is:</p>
-                            <p> -Over 8 characters long</p>
-                            <p> -Has a combination of upper and lower case letters</p>
-                            <p>-Includes at least one numeric and special character</p>
+                            <p>To signup please provide required information below
+                            including valid email address and strong password
+                            that is:</p>
+                            <p>- Over 8 characters long</p>
+                            <p>- Has a combination of upper and lower case letters</p>
+                            <p>- Includes at least one numeric and special character</p>
                         </div>
                     </div>
                     <div class="form-wrapper">
                         <form action="">
                             <div class="row">
                                 <label for="email" class="col-xs-5">Login</label>
-                                <input type="email" placeholder="provide your email" id="email" class="col-xs-7"/>
+                                <input type="email" id="email" class="col-xs-7"/>
                             </div>
                             <div class="row">
                                 <label for="password" class="col-xs-5">Password</label>
-                                <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" id="password" class="col-xs-7"/>
+                                <input type="password" id="password" class="col-xs-7"/>
                             </div>
                             <div class="row">
                                 <label for="confirm" class="col-xs-5">Confirm Password</label>
-                                <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" id="confirm" class="col-xs-7"/>
+                                <input type="password" id="confirm" class="col-xs-7"/>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 add-info">
-                                    Please provide additional information about yourself
-                                    for us to be able to complete new account signup.
+                                    Information below is optional and can be provided
+                                    later, however it is needed to finalize full registration.
                                 </div>
                             </div>
-                            <div class="row">
-                                <label for="name" class="col-xs-5">Full name</label>
-                                <input type="text" placeholder="" id="name" class="col-xs-7"/>
-                            </div>
+                            <!--<div class="row">-->
+                                <!--<label for="name" class="col-xs-5">Full name</label>-->
+                                <!--<input type="text" placeholder="" id="name" class="col-xs-7"/>-->
+                            <!--</div>-->
                             <div class="row">
                                 <label for="phone" class="col-xs-5">Phone #</label>
                                 <input type="tel" placeholder="" id="phone" class="col-xs-7"/>
@@ -59,9 +60,9 @@
                             <div class="row">
                                 <label for="gender" class="col-xs-5">Gender</label>
                                 <select name="gender" id="gender" class="col-xs-7">
-                                    <option value="volvo">- Select the gender -</option>
-                                    <option value="volvo">Male</option>
-                                    <option value="volvo">Female</option>
+                                    <option>- Select the gender -</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
                                 </select>
                             </div>
                             <div class="row">
@@ -78,7 +79,13 @@
                             </div>
                             <div class="row">
                                 <label for="city" class="col-xs-5">City</label>
-                                <input type="text" placeholder="" id="city" class="col-xs-7"/>
+                                <!--<input type="text" placeholder="" id="city" class="col-xs-7"/>-->
+                                <select name="gender" id="city" class="col-xs-7">
+                                    <option>- Select state -</option>
+                                    <option>City Y</option>
+                                    <option>City X</option>
+                                    <option>City Z</option>
+                                </select>
                             </div>
                             <div class="row">
                                 <label for="address-one" class="col-xs-5">Address line 1</label>
