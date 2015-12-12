@@ -29,6 +29,11 @@ body {
   font-family: 'ProximaNovaA-Regular', verdana, sans-serif;
 }
 
+input:-webkit-autofill {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
 body.not-logged-in {
   background-color: #0099E0;
 
@@ -240,10 +245,11 @@ body.not-logged-in {
 
     .custom-width {
       .info {
+        margin-top: 10px;
         padding-left: 0;
-        color: #ffffff;
+        color: #E2F3FB;
         font-style: italic;
-        font-size: 128%;
+        font-size: 127%;
       }
       p {
         margin-bottom: 0;
@@ -252,7 +258,7 @@ body.not-logged-in {
       .form-wrapper {
         form {
 
-          input[type="text"], input[type="tel"] {
+          input[type="text"], input[type="tel"], input[type="email"] {
             outline: none;
           }
 
@@ -299,9 +305,9 @@ body.not-logged-in {
           .add-info {
             padding-left: 0;
             margin-top: 52px;
-            color: #ffffff;
+            color: #E2F3FB;
             font-style: italic;
-            font-size: 128%;
+            font-size: 127%;
           }
 
           button {
