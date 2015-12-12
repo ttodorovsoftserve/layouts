@@ -223,7 +223,7 @@ body.not-logged-in {
       text-align: center;
       color: #fff;
       font-style: italic;
-      font-size: 128% ;
+      font-size: 128%;
     }
 
     .info-centered h1 {
@@ -319,6 +319,12 @@ body.not-logged-in {
       }
     }
   }
+}
+
+
+
+.sign-in-logo {
+  width: 100%;
 }
 
 body.logged-in {
@@ -428,7 +434,7 @@ body.logged-in {
       font-size: 128%;
       padding: 22px 25px;
 
-      p{
+      p {
         color: #6e86a3;
       }
 
@@ -655,6 +661,12 @@ section {
     padding-bottom: 99999px;
     margin-bottom: -99999px;
   }
+
+  .sign-in-input {
+    margin-left: 14px !important;
+    width: 89% !important;
+  }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -662,12 +674,18 @@ section {
     padding-top: 0;
     min-height: 305px !important;
   }
+
+  .sign-in-input {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
 }
 
 .tabs-left .nav-tabs li span {
   display: block;
   width: 100%;
 }
+
 .tabs-left .nav-tabs li span, .tabs-left td, .tabs-left th {
 
   white-space: nowrap;
