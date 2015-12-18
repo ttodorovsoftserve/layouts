@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'ProximaNovaA-Bold';
+    src: url("../fonts/2EE99B_1_0.eot");
+    src: url("../fonts/2EE99B_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EE99B_1_0.woff2") format("woff2"), url("../fonts/2EE99B_1_0.woff") format("woff"), url("../fonts/2EE99B_1_0.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'ProximaNovaA-Regular';
+    src: url("../fonts/2EE99B_5_0.eot");
+    src: url("../fonts/2EE99B_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EE99B_5_0.woff2") format("woff2"), url("../fonts/2EE99B_5_0.woff") format("woff"), url("../fonts/2EE99B_5_0.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'ProximaNovaA-MediumIt';
+    src: url("../fonts/2EE99B_1C_0.eot");
+    src: url("../fonts/2EE99B_1C_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EE99B_1C_0.woff2") format("woff2"), url("../fonts/2EE99B_1C_0.woff") format("woff"), url("../fonts/2EE99B_1C_0.ttf") format("truetype");
+}
+
+body {
+    font-family: 'ProximaNovaA-Regular', verdana, sans-serif;
+}
+
+input:-webkit-autofill {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+
+body.not-logged-in {
+    background-color: #0099E0;
+}
+
+body.not-logged-in label {
+    font-size: 128%;
+    font-weight: 100;
+    color: #B1DFF5;
+    margin-top: 30px;
+    padding-left: 0;
+}
+
+body.not-logged-in input, body.not-logged-in select {
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 2px solid #fff !important;
+    font-size: 128%;
+    margin-top: 30px;
+    border: 0px none;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+body.not-logged-in ::-webkit-input-placeholder {
+    color: #fff;
+    font-style: italic;
+}
+
+body.not-logged-in :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    font-style: italic;
+}
+
+body.not-logged-in ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    font-style: italic;
+}
+
+body.not-logged-in :-ms-input-placeholder {
+    color: #fff;
+    font-style: italic;
+}
+
+body.not-logged-in h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+body.not-logged-in.sign-in {
+    font-size: 1.6rem;
+    font-style: normal;
+}
+
+body.not-logged-in.sign-in h1 img {
+    margin-left: -25px;
+}
+
+body.not-logged-in.sign-in ::-webkit-input-placeholder {
+    font-style: normal;
+}
+
+body.not-logged-in.sign-in :-moz-placeholder {
+    /* Firefox 18- */
+    font-style: normal;
+}
+
+body.not-logged-in.sign-in ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-style: normal;
+}
+
+body.not-logged-in.sign-in :-ms-input-placeholder {
+    font-style: normal;
+}
+
+body.not-logged-in.sign-in label {
+    display: block;
+    margin-left: 30px;
+    font-size: 128%;
+    margin-bottom: 7px;
+}
+
+body.not-logged-in.sign-in label.username {
+    margin-top: 60px;
+}
+
+body.not-logged-in.sign-in input {
+    margin-left: 14px;
+    margin-top: 16px;
+    width: 320px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 0 22px 15px;
+    outline: none;
+}
+
+body.not-logged-in.sign-in input[type="password"] {
+    font-family: verdana, sans-serif;
+    font-size: 128%;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+body.not-logged-in.sign-in input[type="password"]:-ms-input-placeholder {
+    letter-spacing: 0px;
+}
+
+body.not-logged-in.sign-in input[type="password"]::-webkit-input-placeholder {
+    letter-spacing: 0px;
+}
+
+body.not-logged-in.sign-in input[type="password"]::-moz-placeholder {
+    letter-spacing: 0px;
+}
+
+body.not-logged-in.sign-in input[type='text'] {
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+body.not-logged-in.sign-in input[type='submit'] {
+    font-size: 128%;
+    padding: 0;
+    margin-left: 14px;
+    margin-top: 46px;
+    margin-bottom: 32px;
+    width: 320px;
+    height: 68px;
+    border: none !important;
+    background-color: #fff;
+    color: #0099E0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+body.not-logged-in.sign-in a {
+    color: white;
+}
+
+body.not-logged-in main {
+    margin-top: 19.58vh;
+    margin-bottom: 16.6vh;
+}
+
+.sign-in-logo {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .sign-in-input {
+        margin-left: 14px !important;
+        width: 89% !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sign-in-input {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+
